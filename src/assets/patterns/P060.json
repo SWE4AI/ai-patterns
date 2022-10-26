@@ -1,0 +1,21 @@
+{
+	"id": "060",
+	"name": "Microservice vertical pattern",
+	"aka": "",
+	"motivation": "When you need to run several inferences in order;\nWhen you have several inferences, and they have dependencies",
+	"solution": "The pattern deploys prediction models in separate servers or containers as service. You execute prediction request from top to bottom synchronously, and gather the results to respond to the client.",
+	"consequences": "Pros: You may run multiple predictions in order.\nIt is possible to select next prediction service depending on the former prediction.\nYou may make the resource usage efficient, independent in server and code, and isolate failure. Cons: Since the predictions run synchronous order, it will require higher latency.\nA former prediction latency may be bottleneck.\nComplex system structure and workflow.",
+	"examples": "-",
+	"related": [
+		"Microservice horizontal pattern"
+	],
+	"categories": [
+		"Architecture"
+	],
+	"resources": [
+		"124",
+		"012032",
+		"012113",
+		"012128"
+	]
+}

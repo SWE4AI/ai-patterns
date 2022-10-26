@@ -1,0 +1,22 @@
+{
+	"id": "012",
+	"name": "AI Pipelines",
+	"aka": "",
+	"motivation": "How to facilitate systematic engineering of data-driven AI soilutions?",
+	"solution": "An AI-based application is divided into several AI tools, which is similar to a microservice. These AI Tools transfer data through file objets.",
+	"consequences": "Automation of ML workflows",
+	"examples": "",
+	"related": [
+		"Pipes and Filters",
+		"Microservices"
+	],
+	"categories": [
+		"Topology"
+	],
+	"resources": [
+		"008",
+		"009",
+		"126",
+		"103"
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"id": "064",
+	"name": "(Prediction) Circuit break pattern",
+	"aka": "",
+	"motivation": "When the amount or frequency of requests to prediction suddenly increases, it can outpace the velocity of scaling. Complete outages are to avoid",
+	"solution": "It is reasonable to choose to cancel a certain number of request to stabilize the current prediction service, until the scale out completes to respond all the predictions.",
+	"consequences": "Pros: Avoid complete outage of the service.\nIt allows to scale out prediction servers without lowering the current resource availability. Cons:Requires a fallback plan for cancelled requests.",
+	"examples": "-",
+	"related": [
+		""
+	],
+	"categories": [
+		"QoS",
+		"Traditional"
+	],
+	"resources": [
+		"124"
+	]
+}

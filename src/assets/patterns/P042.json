@@ -1,0 +1,20 @@
+{
+	"id": "042",
+	"name": "Replay",
+	"aka": "",
+	"motivation": "Need a way to test models and operational data",
+	"solution": "Invest in a batch test framework",
+	"consequences": "",
+	"examples": "-web search replay query logs and look at changes in rank of clicked documents\n- recommender systems\n- messaging inbox replay",
+	"related": [
+		""
+	],
+	"categories": [
+		"QoS",
+		"Testing",
+		"Traditional"
+	],
+	"resources": [
+		"112"
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"id": "041",
+	"name": "Handshake or \"Hand Buzzer",
+	"aka": "",
+	"motivation": "System depends on inputs delivered outside of the normal release process",
+	"solution": "Create a \"handshake\" normalization process\nRelease handshake process as software associated with input and version \nRegularly check for significant changes and send alerts",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Architecture",
+		"Traditional"
+	],
+	"resources": [
+		"112",
+		"012112",
+		"012134"
+	]
+}

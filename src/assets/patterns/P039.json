@@ -1,0 +1,20 @@
+{
+	"id": "039",
+	"name": "Chop Shop",
+	"aka": "",
+	"motivation": "Legacy system represents significant investment of resources\noften rule based and capture valuable domain features",
+	"solution": "Isolate features and measure computing costs\nuse selected features in new models and processes",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		"Legacy",
+		"Adversarial"
+	],
+	"categories": [
+		"Process",
+		"Traditional"
+	],
+	"resources": [
+		"112"
+	]
+}

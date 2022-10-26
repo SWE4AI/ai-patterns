@@ -1,0 +1,19 @@
+{
+	"id": "019",
+	"name": "Full Acceptance of Safety Responsibility",
+	"aka": "",
+	"motivation": "Recent developments in ML and DL allowed probabilistic systems with large input and output spaces to be explored in safety critical systems. This introduces safety-related challenges, such as: (1) Model complexity and opacity, (2) Dealing with probabilistic output, (3) Sensitivity to distribution shifts (4) Formal verification is impossible or not scalable and more. This safety responsibility has to be dealt with.",
+	"solution": "Verify certain safety properties to which the DL component will have to adhere.",
+	"consequences": "Removes uncertainty. However, a system implemented using this pattern will have to use less powerful algorithms. Very hard to implement for complicated tasks.",
+	"examples": "An intelligent planning algorithm\nfor a spacecraft embarked in deep space exploration, where\ncommunication to Earth takes a very long time. Any nonverifiable properties of a component will most likely mark\nit unusable and lead to new system designs.",
+	"related": [
+		"Delegation of Safety Responsibility",
+		"Partial Rejection of Safety Responsibility"
+	],
+	"categories": [
+		"Safety"
+	],
+	"resources": [
+		"016"
+	]
+}

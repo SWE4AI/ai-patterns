@@ -1,0 +1,19 @@
+{
+	"id": "040",
+	"name": "Internal Feedback",
+	"aka": "",
+	"motivation": "Need a low risk way to test new models with live users",
+	"solution": "Use your own product internally\nGive internal users a way to turn on new models, use the product, and give feedback\nAlso use to develop training data",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		"Bathwater",
+		"Follow the Crowd"
+	],
+	"categories": [
+		"Process"
+	],
+	"resources": [
+		"112"
+	]
+}

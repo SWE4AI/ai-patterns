@@ -1,0 +1,19 @@
+{
+	"id": "066",
+	"name": "Serving template pattern",
+	"aka": "",
+	"motivation": "When you need to develop and release a tons of prediction serving with same input and output with common interface\nWhen you can standardize components in serving except for a prediction smodel",
+	"solution": "Standardize the codebase, infrastructure and deployment policy. it is possible to commonize infrastructure layer, including monitoring, alert, logging, authorization, authentication and security",
+	"consequences": "Pros: Efficiency improvement\nManageable by a common policy\nCon:  Updating the template requires consideration and backward compatibility",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter4_serving_patterns/template_pattern",
+	"related": [
+		"Infrastructure as Code"
+	],
+	"categories": [
+		"Deployment",
+		"Traditional"
+	],
+	"resources": [
+		"124"
+	]
+}

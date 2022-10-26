@@ -1,0 +1,18 @@
+{
+	"id": "063",
+	"name": "Data cache pattern",
+	"aka": "",
+	"motivation": "When you have prediction request for same and repeated data. When the data can be identified with cache key. When you want to accelerate data retrieval and processing.",
+	"solution": "There are two variants for the pattern.\n\n(1) Cache input data. In this case, the service will request input data to DWH and cache parallelly, and proceed to prediction request if cache hits. If not hit, then you will add the data into the cache along with requesting the prediction. You may cache the data after preprocess, to decrease load for preprocessing.\n(2) Preprocess or cache before request. In this case, you will cache data prior to the prediction request, possibly along with the service's first data generation. Once you get a prediction request to the data, you will retrieve from cache to send to prediction. It is a good choice if you want to increase cache rate to improve latency.",
+	"consequences": "Pros: To offload request to prediction server and improve performance.\nAble to respond quickly. Cons: Cache server cost.\nNeeds a policy for clearing the cache.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter4_serving_patterns/data_cache_pattern",
+	"related": [
+		"Prediction Cache Pattern"
+	],
+	"categories": [
+		"Architecture"
+	],
+	"resources": [
+		"124"
+	]
+}

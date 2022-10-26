@@ -1,0 +1,18 @@
+{
+	"id": "069",
+	"name": "Parameter-based serving pattern",
+	"aka": "",
+	"motivation": "To control prediction with parameter.\nWhen it is possible to control rule-based.",
+	"solution": "add a mechanism in your code to change behaviour of all or a part of the predictions, including stopping, retrying or timeout. Since it is difficult to keep high accuracy without any error for a model for every case or every input data, it is better to estimate possible anomaly and control with rulebased mechanism.",
+	"consequences": "Pros: avoid abnormal prediction for edge cases.\nCons: Impossible to cover all the cases.\nIncrease in rules make complexity in operation.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter6_operation_management/paramater_based_pattern",
+	"related": [
+		""
+	],
+	"categories": [
+		"Implementation"
+	],
+	"resources": [
+		"124"
+	]
+}
