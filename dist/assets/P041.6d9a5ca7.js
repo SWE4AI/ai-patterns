@@ -1,0 +1,3 @@
+const e="041",s='Handshake or "Hand Buzzer',a="",n="System depends on inputs delivered outside of the normal release process",o=`Create a "handshake" normalization process
+Release handshake process as software associated with input and version 
+Regularly check for significant changes and send alerts`,t="",c="",r=[""],i=["Architecture","Traditional"],d=["112","012112","012134"],l={id:e,name:s,aka:a,motivation:n,solution:o,consequences:t,examples:c,related:r,categories:i,resources:d};export{a as aka,i as categories,t as consequences,l as default,c as examples,e as id,n as motivation,s as name,r as related,d as resources,o as solution};

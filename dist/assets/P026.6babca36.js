@@ -1,0 +1,3 @@
+const e="026",o="Model Versioning",n="",t="model can become stale and needs to be updated regularly -> need to make sure model is up to date and backward compatible",a="deploy multiple model versions with different model endpoints",s=`allow fine grained performance monitoring 
+allow comparing accuracy and usage statistics
+-> determine when to take model down`,i="",c=[""],d=["ML pattern","Reproducibility Design Pattern"],r=["101","106","001013","012113","012128"],l={id:e,name:o,aka:n,motivation:t,solution:a,consequences:s,examples:i,related:c,categories:d,resources:r};export{n as aka,d as categories,s as consequences,l as default,i as examples,e as id,t as motivation,o as name,c as related,r as resources,a as solution};
