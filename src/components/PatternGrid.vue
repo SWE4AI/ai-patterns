@@ -22,9 +22,9 @@
             </v-tooltip>
             <v-tooltip top>
               <template v-slot:activator="{ on, attrs }">
-                <v-btn icon="mdi-format-quote-close"></v-btn>
+                <v-btn icon="mdi-content-copy" @click="copyToClipboard(pattern.id)"></v-btn>
               </template>
-              <span>View in detail</span>
+              <span>Copy pattern as JSON to clipboard</span>
             </v-tooltip>
           </v-card-actions>
         </v-card>
@@ -34,10 +34,12 @@
   <p v-if="filteredPatterns.length === 0">No patterns here...</p>
   <v-dialog v-model="dialog" class="pattern-detail">
     <v-card class="bg-grey-darken-3">
-      <v-card-title class="border-b-lg mb-4 bg-blue-accent-1">
-        {{ selectedPattern.name }}
+      <v-list-item two-line class="bg-blue-accent-1 border-b-lg">
+        <v-list-item-title class="text-h6 mb-1">{{ selectedPattern.name }}</v-list-item-title>
+        <v-list-item-subtitle>{{ selectedPattern.aka }}&nbsp;</v-list-item-subtitle>
         <v-icon class="close-detailview" @click="dialog = false;">mdi-close</v-icon>
-      </v-card-title>
+      </v-list-item>
+
       <PatternDetail
           :name="this.selectedPattern.name"
           :aka="this.selectedPattern.aka"
@@ -55,6 +57,7 @@
 import PatternDetail from "./PatternDetail.vue";
 
 export default {
+
   name: "PatternGrid",
   components: {PatternDetail},
   data() {
@@ -72,16 +75,16 @@ export default {
   methods: {
     getPatternData() {
       // Import all file paths from the patterns directory
-      let fileList = import.meta.glob("@/assets/patterns/P*.json");
+      let fileList = import.meta.glob("../assets/patterns/*.json");
       // Then import all files and push the patterns from them into the base array
       for (const file in fileList) {
         import(
             file /* @vite-ignore */
             ).then((content) => {
-          this.patterns.push(content);
+          this.patterns[this.patterns.length] = content;
         })
       }
-      this.filteredPatterns.push(...this.patterns);
+      this.filteredPatterns = Object.assign({}, this.patterns);
       this.resetFilters();
     },
     goToDetailView(id) {
@@ -100,8 +103,8 @@ export default {
             return pattern.categories.includes(category.name);
           });
           intermediate = intermediate.filter((pattern) => {
-            for (let element of categorySpecificPatterns){
-              if (element.id === pattern.id){
+            for (let element of categorySpecificPatterns) {
+              if (element.id === pattern.id) {
                 return true;
               }
             }
@@ -114,7 +117,6 @@ export default {
       } else {
         this.filteredPatterns = intermediate;
       }
-      console.log(this.filteredPatterns);
     },
     resetFilters() {
       this.filteredPatterns = this.patterns;
@@ -158,6 +160,12 @@ export default {
             || (pattern.consequences.toLowerCase().includes(inputString))
       });
     },
+    copyToClipboard(id) {
+      let pattern = JSON.stringify(this.patterns.filter((item) => {
+        return item.id === id;
+      })[0].default);
+      navigator.clipboard.writeText(pattern);
+    }
   },
   mounted() {
     this.getPatternData();
@@ -177,5 +185,6 @@ export default {
 .close-detailview {
   position: absolute;
   right: 0.5em;
+  top: 0.5em;
 }
 </style>
