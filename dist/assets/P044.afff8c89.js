@@ -1,0 +1,2 @@
+const e="044",o="Giveaway",s="",t="Need low risk testing or new data",a=`Give away service to non-customers
+give away a related service`,n="",c="",i=["honey trap"],r=["Process","Traditional"],l=["112"],d={id:e,name:o,aka:s,motivation:t,solution:a,consequences:n,examples:c,related:i,categories:r,resources:l};export{s as aka,r as categories,n as consequences,d as default,c as examples,e as id,t as motivation,o as name,i as related,l as resources,a as solution};

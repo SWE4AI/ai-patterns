@@ -57,7 +57,7 @@
 import PatternDetail from "./PatternDetail.vue";
 
 export default {
-
+  
   name: "PatternGrid",
   components: {PatternDetail},
   data() {
@@ -75,7 +75,7 @@ export default {
   methods: {
     getPatternData() {
       // Import all file paths from the patterns directory
-      let fileList = import.meta.glob("../assets/** /*.json");
+      let fileList = import.meta.glob("../assets/**/P*.json");
       // Then import all files and push the patterns from them into the base array
       for (const file in fileList) {
         import(
@@ -161,9 +161,7 @@ export default {
       });
     },
     copyToClipboard(id) {
-      let pattern = JSON.stringify(this.patterns.filter((item) => {
-        return item.id === id;
-      })[0].default);
+      let pattern = JSON.stringify(this.patterns.filter((item) => {return item.id === id;})[0].default);
       navigator.clipboard.writeText(pattern);
     }
   },

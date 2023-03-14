@@ -1,0 +1,5 @@
+const e="048",t="Offline Predictions",n="",o="want more flexivility in model deployment",s=`asynchronous approach
+Predictions are triggered and run asynchronisously either by the application or as a scheduled job. The predictions will be collected and stored \u2014 this is what the application uses to serve the predictions via a user interface.`,i=`pre-trained: yes
+on-the-fly-predictions: no
+
+Many in industry have moved away from this architecture, but it\u2019s much more forgiving in a sense that predictions can be inspected before being returned to a user. Therefore, we reduce the risk of our ML system making errors since predictions are not on the fly.`,r="Many in industry have moved away from this architecture",a=[""],c=["Deployment"],d=["113"],h={id:e,name:t,aka:n,motivation:o,solution:s,consequences:i,examples:r,related:a,categories:c,resources:d};export{n as aka,c as categories,i as consequences,h as default,r as examples,e as id,o as motivation,t as name,a as related,d as resources,s as solution};
