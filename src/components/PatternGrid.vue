@@ -75,7 +75,7 @@ export default {
   methods: {
     getPatternData() {
       // Import all file paths from the patterns directory
-      let fileList = import.meta.glob("../assets/patterns/*.json");
+      let fileList = import.meta.glob("../assets/** /*.json");
       // Then import all files and push the patterns from them into the base array
       for (const file in fileList) {
         import(
