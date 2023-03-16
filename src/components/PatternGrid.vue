@@ -75,14 +75,31 @@ export default {
   methods: {
     getPatternData() {
       // Import all file paths from the patterns directory
-      let fileList = import.meta.glob("../assets/patterns/*.json");
+      let fileList = import.meta.glob("@/assets/**/P*.json");
       // Then import all files and push the patterns from them into the base array
       for (const file in fileList) {
-        import(
-            file /* @vite-ignore */
-            ).then((content) => {
-          this.patterns[this.patterns.length] = content;
-        })
+        console.log(file)
+        // const res = fetch(file).then(
+        //   this.patterns[this.patterns.length] = res.json()
+        // )
+        // console.log(res)
+        var json;
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              json =  JSON.parse(this.responseText)
+            }
+        };
+        xhttp.open("GET", file, false);
+        xhttp.send();
+        this.patterns[this.patterns.length] = json
+        // this.patterns[this.patterns.length] = await res.json()
+        // const content = 
+        // import(
+        //   file /* @vite-ignore */
+        //   ).then((content) => {
+        //     this.patterns[this.patterns.length] = content;
+        // })
       }
       this.filteredPatterns = Object.assign({}, this.patterns);
       this.resetFilters();

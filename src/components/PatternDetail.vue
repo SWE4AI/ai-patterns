@@ -67,8 +67,20 @@ export default {
     'categories'
   ],
   data() {
-    return {
-      resourcePapers: json,
+    let resFile = import.meta.glob("@/assets/**/resources*.json");
+    for (const file in resFile){
+      var json;
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            json =  JSON.parse(this.responseText)
+          }
+      };
+      xhttp.open("GET", file, false);
+      xhttp.send();
+      return {
+        resourcePapers: json
+      }
     }
   }, methods: {
     getResource(id){
