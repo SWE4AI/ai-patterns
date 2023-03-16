@@ -15,4 +15,11 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  rollupOptions: {
+    output: {
+      entryFileNames: `assets/[name].js`,
+      chunkFileNames: `assets/[name].js`,
+      assetFileNames: `assets/[name].[ext]`
+    }
+  }
 });
