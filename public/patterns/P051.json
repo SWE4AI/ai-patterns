@@ -1,0 +1,19 @@
+{
+	"id": "051",
+	"name": "Builder Pattern",
+	"aka": "",
+	"motivation": "",
+	"solution": "Separate the construction of a complex object from its representation",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Implementation",
+		"Traditional"
+	],
+	"resources": [
+		"120"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"id": "059",
+	"name": "Prep-pred pattern",
+	"aka": "",
+	"motivation": "When you have different code-base, library or resource load requirements for preprocess and prediction.\nWhen you want to separate preprocess with prediction to divide issue in each resource to improve availability",
+	"solution": "divide preprocessing steps and the prediction model into separate resources",
+	"consequences": "Pros: (1) Able to use resource efficiently with fault isolation.\n(2) Flexibility in resource usage and scalability.\n(3) Able to select library and language versions for each component.\nCons: (1) Increases operation cost with complexity in resources.\n(2) Network connection in between preprocess and prediction may become bottleneck.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter4_serving_patterns/prep_pred_pattern",
+	"related": [
+		""
+	],
+	"categories": [
+		"Deployment"
+	],
+	"resources": [
+		"124"
+	]
+}

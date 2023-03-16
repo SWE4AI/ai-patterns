@@ -1,0 +1,19 @@
+{
+	"id": "052",
+	"name": "Prototype Pattern",
+	"aka": "",
+	"motivation": "",
+	"solution": "Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Implementation",
+		"Traditional"
+	],
+	"resources": [
+		"120"
+	]
+}

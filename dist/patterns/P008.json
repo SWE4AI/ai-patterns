@@ -1,0 +1,19 @@
+{
+	"id": "008",
+	"name": "AI Mode Switcher",
+	"aka": "",
+	"motivation": "AI is often complex and hard to explain, thus making detailed risk assessment difficult. Adopting AI can be considered as a major architectural design decision when designing a system.",
+	"solution": "An AI component is designed to be flexibly switched off at run-time.",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		"Decision Mode Switcher"
+	],
+	"categories": [
+		"Safety"
+	],
+	"resources": [
+		"003",
+		"129"
+	]
+}

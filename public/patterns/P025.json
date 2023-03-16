@@ -1,0 +1,21 @@
+{
+	"id": "025",
+	"name": "Feature Store",
+	"aka": "",
+	"motivation": "simplify management and reuse of features across projects by decoupling the feature creation process from the development of models using those features",
+	"solution": "create shared feature store: centralized location to store and document features datasets that will be used in building machine learning models and can be shared across projects and teams",
+	"consequences": "decouple feature engineering from feature usage\nensure consistency between model training and serving",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"ML pattern",
+		"Reproducibility Design Pattern"
+	],
+	"resources": [
+		"101",
+		"102",
+		"106"
+	]
+}

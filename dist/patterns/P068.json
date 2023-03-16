@@ -1,0 +1,18 @@
+{
+	"id": "068",
+	"name": "Model-load pattern",
+	"aka": "",
+	"motivation": "When update cycle of a model is more frequent than server image update.\nWhen you want to reuse a server image for serving multiple models.",
+	"solution": "build and save the prediction server image and model file separately, making the image light-weight with respect to size.",
+	"consequences": "Pros: Separate model versioning and image versioning.\nReuse of server image.\nLight image size.\nChange management of server image becomes easier.\nCons: It may take longer to start the service. The server although up should be treated as unhealthy until the model load completes.\nA new requirement of matching supported library versions between images and models is applicable for this pattern.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter3_release_patterns/model_load_pattern#",
+	"related": [
+		""
+	],
+	"categories": [
+		"Deployment"
+	],
+	"resources": [
+		"124"
+	]
+}

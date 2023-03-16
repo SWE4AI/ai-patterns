@@ -1,0 +1,19 @@
+{
+	"id": "044",
+	"name": "Giveaway",
+	"aka": "",
+	"motivation": "Need low risk testing or new data",
+	"solution": "Give away service to non-customers\ngive away a related service",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		"honey trap"
+	],
+	"categories": [
+		"Process",
+		"Traditional"
+	],
+	"resources": [
+		"112"
+	]
+}

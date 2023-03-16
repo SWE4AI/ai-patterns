@@ -1,0 +1,18 @@
+{
+	"id": "071",
+	"name": "Closed Loop intelligence",
+	"aka": "",
+	"motivation": "ML System performs bad on the day of shipping",
+	"solution": "close loop between user and ML-system -> acquire data to improve system",
+	"consequences": "",
+	"examples": "012026",
+	"related": [
+		""
+	],
+	"categories": [
+		""
+	],
+	"resources": [
+		"012026"
+	]
+}

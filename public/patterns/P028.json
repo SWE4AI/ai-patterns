@@ -1,0 +1,20 @@
+{
+	"id": "028",
+	"name": "Explainable Predictions",
+	"aka": "",
+	"motivation": "Goal: increase user trust. Why does a model makes a certain prediction?\n\nMetrics (e.g. accuracy) only tell one piece of the story",
+	"solution": "some models are interpretable by design (e.g. decision trees)\n\ncomplex models: use post hoc explainability (area of ongoing research): e.g. feature attributions\n2 types of feature attributions:\n- instance-level\n- global",
+	"consequences": "are only as good as the models training data, quality of model and the chosen baseline",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"ML pattern",
+		"Responsible AI"
+	],
+	"resources": [
+		"101",
+		"106"
+	]
+}

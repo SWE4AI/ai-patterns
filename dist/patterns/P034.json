@@ -1,0 +1,18 @@
+{
+	"id": "034",
+	"name": "End-To-End Tests",
+	"aka": "",
+	"motivation": "A faulty ML model or pipeline shouldn’t be allowed to be released and produce poor results in the app.",
+	"solution": "Manual smoke testing is always useful, and keeping the tests fresh and up-to-date with new features, use cases and data is an ongoing task. ML model predictions are no different. If a part of the app is served by an ML model recommendation, identify the assertions that can be made",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Testing"
+	],
+	"resources": [
+		"109"
+	]
+}

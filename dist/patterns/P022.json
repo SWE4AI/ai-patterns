@@ -1,0 +1,21 @@
+{
+	"id": "022",
+	"name": "Continued Model Evaluation",
+	"aka": "",
+	"motivation": "Problem of needing to take action when a deployed model is no longer fit-for-purpose.",
+	"solution": "Continuously monitor the model's predictive performance with the same evaluation metrics used during development. This is used to determine if changes to a model are working as intended.",
+	"consequences": "",
+	"examples": "Saving predictions\nCapturing ground truth",
+	"related": [
+		""
+	],
+	"categories": [
+		"QoS",
+		"Design Patterns for Resilient Serving"
+	],
+	"resources": [
+		"101",
+		"106",
+		"012103"
+	]
+}

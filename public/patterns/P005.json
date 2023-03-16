@@ -1,0 +1,31 @@
+{
+	"id": "005",
+	"name": "Multi-Layer Pattern",
+	"aka": "Separation of Concerns, Multi-Tiered Architecture",
+	"motivation": "An application comprises several groups of subtasks, each of which is at a different level of abstraction.",
+	"solution": "Divide the application into different layers. Each layer, consisting of sub-modules, can be independently designed to feed into foreign prototypes. Each layer has an input and corresponding output to the succeeding layer. The succeeding return is used as a feed to the next layers for further processing. Every layer communicates only with its direct neighbor",
+	"consequences": "This pattern enables inference of results at the individual steps. Extra components can be added or modified to meet the computational requirements giving it high flexibility.",
+	"examples": "024, 022, 020",
+	"related": [
+		""
+	],
+	"categories": [
+		"Architecture",
+		"Traditional"
+	],
+	"resources": [
+		"002",
+		"020",
+		"022",
+		"024",
+		"001012",
+		"005009",
+		"010003",
+		"012005",
+		"012017",
+		"012032",
+		"012112",
+		"012113",
+		"012134"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"id": "035",
+	"name": "Alarms And Notifications On Processes",
+	"aka": "",
+	"motivation": "In an ML system, there’s incoming data, models are run, the models’ output is stored and analyzed and application tables are created. All these processes are either running on regularly scheduled jobs or a part of a queue or eventing system. \nErrors shall be detected",
+	"solution": "Whenever a script fails, log the error and push it to an alarming dashboard (to debug later) and notify employees via email, Slack or some other method. When a notification is superfluous, adjust the alarm: Every alarm should be an occasion that requires action. Similar to latency in an application, store and analyze the results of an ML model application that will help data changes, infrastructure capacity pressures or just unexpected drifts of prediction types.",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"QoS"
+	],
+	"resources": [
+		"109"
+	]
+}

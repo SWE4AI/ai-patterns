@@ -1,0 +1,20 @@
+{
+	"id": "032",
+	"name": "Continuous Integration and Deployment",
+	"aka": "",
+	"motivation": "Reduce the risk of releasing broken applications.",
+	"solution": "Always build with unit and component tests and deploy with verification tests using code that itself is under version control. After you commit to a development branch, the system deploys to a development environment. Once all end-to-end and manual smoke testing is complete, a manual action deploys to production.",
+	"consequences": "",
+	"examples": "012011",
+	"related": [
+		"Continued Model Evaluation"
+	],
+	"categories": [
+		"Process",
+		"Traditional"
+	],
+	"resources": [
+		"109",
+		"012122"
+	]
+}

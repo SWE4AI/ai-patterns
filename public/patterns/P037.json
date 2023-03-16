@@ -1,0 +1,21 @@
+{
+	"id": "037",
+	"name": "Legacy",
+	"aka": "",
+	"motivation": "an older model or early approach needs to be replaced but has entrenched support",
+	"solution": "Use as an input to new approach (presumably based on ML) \nCan be technically challenging but frequently can be converted to an input in conjunction with Pipeline",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		"Chop Shop",
+		"Tiers",
+		"Shadow"
+	],
+	"categories": [
+		"Process",
+		"Traditional"
+	],
+	"resources": [
+		"112"
+	]
+}

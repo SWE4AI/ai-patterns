@@ -1,0 +1,20 @@
+{
+	"id": "023",
+	"name": "Two-Phase Predictions",
+	"aka": "",
+	"motivation": "Keeping large, complex models performant when they have to be deployed on distributed devices.",
+	"solution": "Split the use case into two phases → simpler use case gets executed on the edge, more complex use case e.g. in the cloud\n\n1) building the offline model\n2) building the cloud model\n\nvariation: Standalone single-phase model",
+	"consequences": "System does not rely on the (reliable) internet connection of the end user.",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Deployment",
+		"Design Patterns for Resilient Serving"
+	],
+	"resources": [
+		"101",
+		"106"
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"id": "033",
+	"name": "Infrastructure as Code",
+	"aka": "",
+	"motivation": "avoid deploying or configuring the infrastructure incorrectly",
+	"solution": "Use code to specify the infrastructure and run scripts to recreate and verify the infrastructure that the system needs. Similarly, the infrastructure required to build and test the ML models, as well as run them in production, should be defined as code.",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		"Serving template pattern"
+	],
+	"categories": [
+		"Process",
+		"Traditional"
+	],
+	"resources": [
+		"109"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"id": "020",
+	"name": "Lambda Architecture Pattern",
+	"aka": "",
+	"motivation": "",
+	"solution": "Group the components based on their latency requirements into three layers:\n(1) batch layer ingests and stores large amounts of data\n(2) speed layer processes updates to the data in low-latency\n(3) serving layer provides precalculated results in a low-latency fashion",
+	"consequences": "",
+	"examples": "023: Reference Software Architecture for Human-AI teaming in smart manifacturing",
+	"related": [
+		""
+	],
+	"categories": [
+		"Architecture",
+		"Traditional"
+	],
+	"resources": [
+		"023",
+		"005011",
+		"012005",
+		"012113",
+		"012122",
+		"012128"
+	]
+}

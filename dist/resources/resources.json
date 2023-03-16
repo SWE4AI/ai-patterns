@@ -1,0 +1,802 @@
+[
+	{
+		"id": "001",
+		"name": "Enterprise Architecture based Representation of Architecture and Design Patterns for Machine Learning Systems",
+		"doi": "https://doi.org/10.1109/EDOCW52865.2021.00055",
+		"year": 2021,
+		"authors": "H. Takeuchi; T. Doi; H. Washizaki; S. Okuda; N. Yoshioka",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "002",
+		"name": "Design patterns for Machine Learning Applications",
+		"doi": "https://doi.org/10.1109/ICCMC.2019.8819692",
+		"year": 2019,
+		"authors": "R. Sharma; K. Davuluri",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "003",
+		"name": "Software engineering for Responsible AI: An empirical study and operationalised patterns",
+		"doi": "https://doi.org/10.1109/ICSE-SEIP55303.2022.9793864",
+		"year": 2022,
+		"authors": "Q. Lu; L. Zhu; X. Xu; J. Whittle; D. Douglas; C. Sanderson",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "005",
+		"name": "Practitioners’ insights on machine-learning software engineering design patterns: a preliminary study",
+		"doi": "https://doi.org/10.1109/ICSME46990.2020.00095",
+		"year": 2020,
+		"authors": "H. Washizaki; H. Takeuchi; F. Khomh; N. Natori; T. Doi; S. Okuda",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "008",
+		"name": "Towards a Secure Proxy-based Architecture for Collaborative AI Engineering",
+		"doi": "https://doi.org/10.1109/CANDARW51189.2020.00077",
+		"year": 2020,
+		"authors": "R. -V. Tkachuk; D. Ilie; K. Tutschku",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "010",
+		"name": "Towards Fluid Software Architectures: Bidirectional Human-AI Interaction",
+		"doi": "https://doi.org/10.1109/ASE51524.2021.9678647",
+		"year": 2021,
+		"authors": "A. Yasser; M. Abu-Elkhier",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "011",
+		"name": "Artificial Intelligence Service Architecture for Edge Device",
+		"doi": "https://doi.org/10.1109/ICCE-Berlin50680.2020.9352184",
+		"year": 2020,
+		"authors": "S. Kum; Y. Kim; D. Siracusa; J. Moon",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "012",
+		"name": "Studying Software Engineering Patterns for Designing Machine Learning Systems",
+		"doi": "https://doi.org/10.1109/IWESEP49350.2019.00017",
+		"year": 2019,
+		"authors": "H. Washizaki; H. Uchida; F. Khomh; Y. Guéhéneuc",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "016",
+		"name": "Designing Safety Critical Software Systems to Manage Inherent Uncertainty",
+		"doi": "https://doi.org/10.1109/ICSA-C.2019.00051",
+		"year": 2019,
+		"authors": "X. Xiaomin; H. Ju",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "017",
+		"name": "Experimental Design for Multi-task Deep Learning toward Intelligence Augmented Visual AI",
+		"doi": "https://doi.org/10.1109/ICTC52510.2021.9620883",
+		"year": 2021,
+		"authors": "B. Cha; Y. Cha; S. An; E. Jeon; S. Park; J. Kim",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "020",
+		"name": "Design of AI-based self-learning platform for college English listening",
+		"doi": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9361038",
+		"year": 2020,
+		"authors": "J. Zhou",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "022",
+		"name": "Architecture Design of Typical Target Detection and Tracking System in Battlefield Environment",
+		"doi": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9730973",
+		"year": 2021,
+		"authors": "J. Bi; G. Zhang; C. Yang; L. Jin; W. Zhang",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "023",
+		"name": "Towards a Reference Software Architecture for Human-AI Teaming in Smart Manufacturing",
+		"doi": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9793509",
+		"year": 2022,
+		"authors": "P. Haindl; G. Buchgeher; M. Khan; B. Moser",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "024",
+		"name": "Research on Feature and Architecture Design of AI Firewall",
+		"doi": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9693884",
+		"year": 2021,
+		"authors": "Z. Wang",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": "026",
+		"name": "The application of design pattern on intellectualized selecting the doors and windows pattern system",
+		"doi": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5541359",
+		"year": 2010,
+		"authors": "Haihui He; Linxiang Shi",
+		"isWhiteLiterature": true
+	},
+	{
+		"id": 101,
+		"name": "Machine Learning Design Patterns [Book] - O'Reilly",
+		"doi": "https://www.oreilly.com/library/view/machine-learning-design/9781098115777/",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 102,
+		"name": "Design Patterns in Machine Learning for MLOps",
+		"doi": "https://towardsdatascience.com/design-patterns-in-machine-learning-for-mlops-a3f63f745ce4",
+		"year": 2022,
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 103,
+		"name": "Design Patterns in Machine Learning Code and Systems",
+		"doi": "https://eugeneyan.com/writing/design-patterns/",
+		"year": 2022,
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 109,
+		"name": "How To Include Machine Learning Into Engineering Patterns",
+		"doi": "https://www.forbes.com/sites/forbestechcouncil/2022/06/06/how-to-include-machine-learning-into-engineering-patterns/",
+		"year": 2022,
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 112,
+		"name": "Patterns (and Anti-Patterns) for Developing Machine Learning ...",
+		"doi": "https://www.usenix.org/legacy/event/sysml08/tech/rios_talk.pdf",
+		"year": 2008,
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 113,
+		"name": "4 Machine Learning System Architectures | by Kurtis Pykes",
+		"doi": "https://towardsdatascience.com/4-machine-learning-system-architectures-e65e33481970",
+		"year": 2021,
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 117,
+		"name": "Federated Machine Learning and Edge Systems - InfoQ",
+		"doi": "https://www.infoq.com/articles/federated-ml-edge/",
+		"year": 2022,
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 120,
+		"name": "Understand Machine Learning Through 7 Software Design ...",
+		"doi": "https://towardsdatascience.com/understand-machine-learning-through-7-software-design-patterns-a03572f4e695",
+		"year": 2022,
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 124,
+		"name": "Machine learning system design pattern - GitHub",
+		"doi": "https://github.com/mercari/ml-system-design-pattern",
+		"year": 2021,
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 125,
+		"name": "Machine Learning Design Patterns: Reproducibility",
+		"doi": "https://changyaochen.github.io/ML-design-pattern-1/",
+		"year": 2020,
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 126,
+		"name": "Serving ML Models in Production: Common Patterns - Anyscale",
+		"doi": "https://www.anyscale.com/blog/serving-ml-models-in-production-common-patterns",
+		"year": 2021,
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 129,
+		"name": "a Pattern Collection for Designing Responsible AI Systems",
+		"doi": "https://arxiv.org/abs/2203.00905",
+		"year": 2022,
+		"authors": "https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Q",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "001012",
+		"name": "Machine learning system architectural pattern for improving operational stability",
+		"doi": "https://doi.org/10.1109/ICSA-C.2019.00055",
+		"year": 2019,
+		"authors": "H. Yokoyama",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "001013",
+		"name": "Software engineering patterns for machine learning applications (sep4mla)",
+		"doi": "http://assets.ptidej.net/Publications/Documents/AsianPLoP20.doc.pdf",
+		"year": 2020,
+		"authors": "H. Washizaki, H. Uchida, F. Khomh and Y.-G. Guéhéneuc",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "001014",
+		"name": "Software engineering patterns for machine learning applications (sep4mla) - part 2",
+		"doi": "https://hillside.net/plop/2020/papers/washizaki.pdf",
+		"year": 2020,
+		"authors": "H. Washizaki, H. Uchida, F. Khomh and Y.-G. Guéhéneuc",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "002005",
+		"name": "Reusable architectural decision models for quality -driven decision support : a case study from a smart cities software ecosystem",
+		"doi": "https://doi.org/10.1109/SESoS.2015.14",
+		"year": 2015,
+		"authors": "Ioanna Lytra, Gerhard Engelbrecht, Daniel Schall and Uwe Zdun",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "005006",
+		"name": "Machine learning system architectural pattern for improving operational stability",
+		"doi": "https://doi.org/10.1109/ICSA-C.2019.00055",
+		"year": 2019,
+		"authors": "H. Yokoyama",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "005008",
+		"name": "Daisy architecture",
+		"doi": "https://datalanguage.com/features/daisy-architecture",
+		"year": 2018,
+		"authors": "J. Everett",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "005009",
+		"name": "Exploring development patterns in data science",
+		"doi": "https://www.theorylane.com/2017/10/20/some-development-patterns-in-data-science/",
+		"year": 2017,
+		"authors": "D. Smith",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "005011",
+		"name": "Lambda architecture pattern",
+		"doi": "https://hub.packtpub.com/lambdaarchitecture-pattern/",
+		"year": 2017,
+		"authors": "Tomcy John and Pankaj Misra",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "005019",
+		"name": "Federated learning: Collaborative machine learning without centralized training data",
+		"doi": "https://ai.googleblog.com/2017/04/federated-learning-collaborative.html",
+		"year": 2017,
+		"authors": "Brendan McMahan and Daniel Ramage",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "010002",
+		"name": "Client-server computing",
+		"doi": "https://doi.org/10.1145/129902.129908",
+		"year": 1992,
+		"authors": "A. Sinha",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "010003",
+		"name": "Layered architecture revisited—comparison of research and practice",
+		"doi": "https://doi.org/10.1109/WICSA.2009.5290685",
+		"year": 2009,
+		"authors": "J. Savolainen and V. Myllarniemi",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012005",
+		"name": "Landscape of iot patterns",
+		"doi": "https://dl.acm.org/citation.cfm?id=3354013",
+		"year": 2019,
+		"authors": "H. Washizaki, N. Yoshioka, A. Hazeyama, T. Kato, H. Kaiya, S. Ogata, et al.",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012010",
+		"name": "Machine learning at facebook: Understanding inference at the edge",
+		"doi": "https://doi.org/10.1109/HPCA.2019.00058",
+		"year": 2019,
+		"authors": "C. Wu, D. Brooks, K. Chen, D. Chen, S. Choudhury, M. Dukhan, et al.",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012011",
+		"name": "Continuous integration of machine learning models with ease.ml/ci: Towards a rigorous yet practical treatment",
+		"doi": "http://arxiv.org/abs/1903.00278",
+		"year": 2019,
+		"authors": "C. Renggli, B. Karlas, B. Ding, F. Liu, K. Schawinski, W. Wu, et al.",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012013",
+		"name": "Software architecture of a learning apprentice system in medical billing",
+		"doi": "https://www.researchgate.net/profile/Umair-Abdullah-3/publication/45534356_Software_Architecture_of_a_Learning_Apprentice_System_in_Medical_Billing/links/0056353b3b745e20e7000000/Software-Architecture-of-a-Learning-Apprentice-System-in-Medical-Billing.pdf",
+		"year": 2010,
+		"authors": "A. Ahmed, U. Abdullah and M. J. Sawar",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012014",
+		"name": "Cleartk 2.0: Design patterns for machine learning in UIMA",
+		"doi": "http://www.lrec-conf.org/proceedings/lrec2014/summaries/218.html",
+		"year": 2015,
+		"authors": "S. Bethard, P. V. Ogren and L. Becker",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012017",
+		"name": "Machine learning system architectural pattern for improving operational stability",
+		"doi": "https://doi.org/10.1109/ICSA-C.2019.00055",
+		"year": 2019,
+		"authors": "H. Yokoyama",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012023",
+		"name": "The mvc for machine learning: Data-model-learner (dml)",
+		"doi": "https://hackernoon.com/the-mvc-for-machine-learning-data-model-learner-dml-8127d793f930",
+		"year": 2017,
+		"authors": "Jie Feng",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012024",
+		"name": "Rules of machine learning: Best practices for ml engineering",
+		"doi": "https://developers.google.com/machine-learning/guides/rules-of-ml/#your first objective",
+		"year": 2022,
+		"authors": "Martin Zinkevich",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012026",
+		"name": "Closed-loop intelligence: A design pattern for machine learning",
+		"doi": "https://msdn.microsoft.com/en-us/magazine/mt833408",
+		"year": 2019,
+		"authors": "Geoff Hulten",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012032",
+		"name": "Exploring development patterns in data science",
+		"doi": "https://www.theorylane.com/2017/10/20/some-development-patterns-in-data-science/",
+		"year": 2017,
+		"authors": "Daniel Smith",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": 123014,
+		"name": "Software engineering for Responsible AI: An empirical study and operationalised patterns",
+		"doi": "https://www.semanticscholar.org/paper/6a03b02e61b447ce1456624853d7accfd24a2711",
+		"year": 2021,
+		"authors": "Q. LuLiming ZhuXiwei XuJ. WhittleDavid M. DouglasC. Sanderson",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012122",
+		"name": "Adapting software architectures to machine learning challenges",
+		"doi": "https://ieeexplore.ieee.org/abstract/document/9825909/",
+		"year": 2022,
+		"authors": "A Serban, J Visser",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012126",
+		"name": "Software Design Patterns for AI-Systems.",
+		"doi": "https://www.researchgate.net/profile/Marius-Take/publication/354005672_Software_Design_Patterns_for_AI-Systems/links/611e5be71ca20f6f8633e7e4/Software-Design-Patterns-for-AI-Systems.pdf",
+		"year": 2021,
+		"authors": "M Take, S Alpers, C Becker, C Schreiber, A Oberweis",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012128",
+		"name": "Software-Engineering Design Patterns for Machine Learning Applications",
+		"doi": "https://ieeexplore.ieee.org/iel7/2/9734242/09734272.pdf",
+		"year": 2022,
+		"authors": "Hironori Washizaki; Foutse Khomh; Yann-Gaël Guéhéneuc; Hironori Takeuchi; Naotake Natori; Takuo Doi; Satoshi Okuda",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012134",
+		"name": "Software Engineering Patterns for Machine Learning Applications (SEP4MLA)",
+		"doi": "http://assets.ptidej.net/Publications/Documents/AsianPLoP20.doc.pdf",
+		"year": 2020,
+		"authors": "F KHOMH, YG GUÉHÉNEUC",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012145",
+		"name": "Preliminary Literature Review of Machine Learning System Development Practices",
+		"doi": "https://ieeexplore.ieee.org/abstract/document/9529726/",
+		"year": 2021,
+		"authors": "Yasuhiro Watanabe1, Hironori Washizaki2, Kazunori Sakamoto3,",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012112",
+		"name": "Machine learning architecture and design patterns",
+		"doi": "http://www.washi.cs.waseda.ac.jp/wp-content/uploads/2019/12/IEEE_Software_19__ML_Patterns.pdf",
+		"year": 2020,
+		"authors": "Hironori Washizaki, Hiromu Uchida, Foutse Khomh, Yann-Gae ̈l Gue ́he ́neuc",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "012134",
+		"name": "Software Engineering Patterns for Machine Learning Applications (SEP4MLA)",
+		"doi": "http://assets.ptidej.net/Publications/Documents/AsianPLoP20.doc.pdf",
+		"year": 2020,
+		"authors": "F KHOMH, YG GUÉHÉNEUC",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	},
+	{
+		"id": "",
+		"name": "",
+		"doi": "",
+		"year": "",
+		"authors": "",
+		"isWhiteLiterature": false
+	}
+]

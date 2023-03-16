@@ -1,0 +1,20 @@
+{
+	"id": "054",
+	"name": "Decorator Pattern",
+	"aka": "",
+	"motivation": "",
+	"solution": "Attach additional responsibilities to an object dynamically.",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Implementation",
+		"Traditional"
+	],
+	"resources": [
+		"120",
+		"103"
+	]
+}

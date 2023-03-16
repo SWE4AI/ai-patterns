@@ -1,0 +1,18 @@
+{
+	"id": "047",
+	"name": "Model Published as Data",
+	"aka": "",
+	"motivation": "simplicity-flexibility trade off in deployment\n\nwant to ingest model at runtime",
+	"solution": "training process publishes a trained model to a streaming platform (i.e. Apache Kafka) which will be consumed at runtime by the application, instead of build time — eligible to subscribe for any model updates.",
+	"consequences": "pre-trained: yes\non-the-fly-predictions: yes\n\nMaintaining the infrastructure required for this archeticutre demands much more engineering sophistication, however ML models can be updated without any applications needing to be redeployed — this is because the model can be ingested at runtime.",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Deployment"
+	],
+	"resources": [
+		"113"
+	]
+}

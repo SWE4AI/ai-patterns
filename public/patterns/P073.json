@@ -1,0 +1,21 @@
+{
+	"id": "073",
+	"name": "Data Lake (for ML)",
+	"aka": "",
+	"motivation": "Collect raw data for as long as possible and offer access to analytic algorithms, like ML algorithms.\n\n\nIn the traditional Data Warehouse architecture, all data is read from various sources by an ETL (Extract/Transform/Load) tool, and is well structured based on a simplified data model to gain all the advantages of a data warehouse such\nas fast and efficient query processing [Daehn 2017]. In other words, semantics first and content later [Daehn 2017].\nIn practice, neither the types of analyses that will be performed nor the adopted frameworks can be foreseen.",
+	"solution": "Data, which ranges from structured to unstructured, should be stored as “raw” as possible into a data storage called a \"Data Lake\". A data lake should allow parallel analyses of different types of data with various frameworks. Thus, a data lake should facilitate efficient (time, space) writing of data from the data sources (e.g., sensors) and efficient, parallel reading of the data for ML frameworks. To realize these features, the data lake must contain historical data and support the insert functionality.",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		"Distinguish Business Logic from ML Models",
+		"Gateway Routing Architecture"
+	],
+	"categories": [
+		"Architecture"
+	],
+	"resources": [
+		"001013",
+		"012113",
+		"012128"
+	]
+}

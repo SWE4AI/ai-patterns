@@ -1,0 +1,20 @@
+{
+	"id": "007",
+	"name": "Ethics credentials",
+	"aka": "",
+	"motivation": "Responsible AI requirements are either omitted or mostly stated\nas high-level objectives, and not specified explicitly in a verifiable way as expected system outputs (to be verified/validated)\nand outcomes (e.g. benefits)",
+	"solution": "Ethics credentials are used to verify the ethical qualification of an organisation, a developer, an AI system, or a component.",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Safety"
+	],
+	"resources": [
+		"003",
+		"129",
+		"123014"
+	]
+}

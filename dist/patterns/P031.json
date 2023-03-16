@@ -1,0 +1,20 @@
+{
+	"id": "031",
+	"name": "Mediator Pattern",
+	"aka": "",
+	"motivation": "For example, we might have multiple recommendation widgets to display on the home page of Netflix. Instead of allowing widgets to decide how they’re shown to users, we can require each widget to go through a mediator which ranks the widgets. The mediator may also perform checks (e.g., exclude widgets with less than x items) or update widgets (e.g., deduplicate items across multiple widgets).\nachieve loose coupling\nrestrict direct communication between services",
+	"solution": "forcing services to collaborate - indirectly - via mediator",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Architecture",
+		"Traditional"
+	],
+	"resources": [
+		"103",
+		"120"
+	]
+}

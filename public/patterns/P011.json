@@ -1,0 +1,18 @@
+{
+	"id": "011",
+	"name": "Audit Black Box",
+	"aka": "",
+	"motivation": "There is a strong desire for continuously monitoring and validating AI systems post deployment for ethical requirements but current operation practices provide lim-\nited guidance.",
+	"solution": "Ethical metric data is captured at run time\nby a black box for auditing purposes.",
+	"consequences": "An AI system can be monitored continuously; Auditing introduces more complexity and effort. Designing the ethical black box is challenging as the ethical metrics need to be identified for data collection.",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Safety"
+	],
+	"resources": [
+		"003,129"
+	]
+}

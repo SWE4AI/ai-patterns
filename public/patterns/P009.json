@@ -1,0 +1,18 @@
+{
+	"id": "009",
+	"name": "Decision Mode Switcher",
+	"aka": "",
+	"motivation": "AI is often complex and hard to explain, thus making detailed risk assessment difficult. Adopting AI can be considered as a major architectural design decision when designing a system.",
+	"solution": "Provision various decision-making modes, i.e. fully automatic or suggestion with human-in-the-loop (kill switch, override, fallback)",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		"AI Mode Switcher"
+	],
+	"categories": [
+		"Safety"
+	],
+	"resources": [
+		"003"
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"id": "050",
+	"name": "State Pattern",
+	"aka": "",
+	"motivation": "",
+	"solution": "Allow an object to alter its behavior when its internal state changes",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Implementation",
+		"Traditional"
+	],
+	"resources": [
+		"120"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"id": "006",
+	"name": "Player-Role Pattern",
+	"aka": "",
+	"motivation": "The training set, data pre-processing and its training play many\nroles when attached to other detection systems or systems that\nwidely use machine learning techniques",
+	"solution": "Players can change roles given different sets of\nrequirements and scenarios",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		""
+	],
+	"resources": [
+		"002"
+	]
+}

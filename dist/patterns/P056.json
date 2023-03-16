@@ -1,0 +1,19 @@
+{
+	"id": "056",
+	"name": "Synchronous pattern",
+	"aka": "",
+	"motivation": "When in your business logic, the model inference is a blocker to proceed to the next step",
+	"solution": "blocks the system's workflow until the prediction finishes",
+	"consequences": "Easy to manage with its simplicity. All operational aspects like transaction tracing, monitoring etc become easy as well. Service workflow becomes simple for the process won't proceed until the prediction completes.\nBut: (1) The prediction latency can become a performance bottleneck.\n(2) You might have to consider a workaround for not degrading your user experience because of prediction latency. (3) If the client of your service is another service then this pattern leads to blocked threads on the client side.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter4_serving_patterns/synchronous_pattern",
+	"related": [
+		"Asynchronous Pattern"
+	],
+	"categories": [
+		"Deployment",
+		"Architecture"
+	],
+	"resources": [
+		"124"
+	]
+}

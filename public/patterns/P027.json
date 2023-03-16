@@ -1,0 +1,20 @@
+{
+	"id": "027",
+	"name": "Heuristic Benchmark",
+	"aka": "",
+	"motivation": "is a prediction of a model good/bad?\n-> hard numbers of ML predictions difficult for end users / business decision makers to put into context",
+	"solution": "1) compare prediction to a current operational version\n2) compare to an easy to understand heuristic",
+	"consequences": "might require special data collection \nthere are instances where a heuristic benchmark may be insufficient because the comparison itself needs context",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"ML pattern",
+		"Responsible AI"
+	],
+	"resources": [
+		"101",
+		"106"
+	]
+}

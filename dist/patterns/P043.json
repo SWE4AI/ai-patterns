@@ -1,0 +1,19 @@
+{
+	"id": "043",
+	"name": "Tar pit",
+	"aka": "",
+	"motivation": "System needs to identify bad entities but cost to register new ones is cheap\n\nslows down adversary's evolution",
+	"solution": "Don't reject, delete or notify bad actors",
+	"consequences": "",
+	"examples": "- slow down email messaging for low reputation IP adresses",
+	"related": [
+		"honey trap"
+	],
+	"categories": [
+		"Architecture",
+		"Traditional"
+	],
+	"resources": [
+		"112"
+	]
+}

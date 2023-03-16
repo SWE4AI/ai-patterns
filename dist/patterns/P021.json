@@ -1,0 +1,20 @@
+{
+	"id": "021",
+	"name": "Stateless Serving Function",
+	"aka": "",
+	"motivation": "Serve thousands to millions of prediction requests per second.",
+	"solution": "Design ML systwm around stateless function that captures the architecture and weights of a trained model\n1) Export the model into a format that captures the mathematical core of the model and is programming language agnostic\n2) In the production system, the formula consisting of the \"forward\" calculations of the model is restored as a stateless function\n3) The stateless function is deployed into a framework that provides a REST endpoint",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Deployment",
+		"Design Patterns for Resilient Serving"
+	],
+	"resources": [
+		"101",
+		"106"
+	]
+}

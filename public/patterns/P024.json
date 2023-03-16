@@ -1,0 +1,29 @@
+{
+	"id": "024",
+	"name": "Workflow Pipeline",
+	"aka": "",
+	"motivation": "Problem: creating an end-to-end reproducible pipeline by containerizing and orchestrating the steps in a machine learning process. Data Science notebooks can run a whole pipeline but they do not scale",
+	"solution": "make each step of pipeline a separate, containerized service. Container a chained together to make a pipeline that can be run with a REST API call.",
+	"consequences": "",
+	"examples": "012024",
+	"related": [
+		""
+	],
+	"categories": [
+		"Architecture",
+		"Topology",
+		"Reproducibility Design Pattern"
+	],
+	"resources": [
+		"008",
+		"009",
+		"125",
+		"126",
+		"101",
+		"102",
+		"106",
+		"112",
+		"103",
+		"012014"
+	]
+}
