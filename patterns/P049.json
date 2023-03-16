@@ -1,0 +1,21 @@
+{
+	"id": "049",
+	"name": "Strategy Pattern",
+	"aka": "",
+	"motivation": "How can the algorithm/model which performs a task in a given context be flexibly changed?",
+	"solution": "Define an interface (strategy). The context will call the mehtods/functions exposed by the interface; different models implement this interface",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Implementation",
+		"Traditional"
+	],
+	"resources": [
+		"120",
+		"103",
+		"012126"
+	]
+}

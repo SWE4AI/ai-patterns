@@ -1,0 +1,20 @@
+{
+	"id": "053",
+	"name": "Adapter Pattern",
+	"aka": "",
+	"motivation": "",
+	"solution": "Convert the interface of a class into another interface clients expect.",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Implementation",
+		"Traditional"
+	],
+	"resources": [
+		"120",
+		"103"
+	]
+}

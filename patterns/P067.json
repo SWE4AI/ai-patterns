@@ -1,0 +1,18 @@
+{
+	"id": "067",
+	"name": "Model-in-image pattern",
+	"aka": "",
+	"motivation": "When you want to unify versions of service environment and prediction model.",
+	"solution": "including the model file into the server or container image. In the model-in-image pattern, you build a server or container image with the model file contained in it.",
+	"consequences": "Pros: Uniquely identify a server image with model file version.\nCons: You need to define a complete pipeline of a model training and image building.\nTakes longer to build image and deploy.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter3_release_patterns/model_in_image_pattern",
+	"related": [
+		""
+	],
+	"categories": [
+		"Deployment"
+	],
+	"resources": [
+		"124"
+	]
+}

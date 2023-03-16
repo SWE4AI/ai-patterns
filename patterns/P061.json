@@ -1,0 +1,21 @@
+{
+	"id": "061",
+	"name": "Microservice horizontal pattern",
+	"aka": "",
+	"motivation": "When the workflow can execute multiple predictions in parallel.\nWhen you want to integrate prediction results at last.\nRequired to run several predictions to one request",
+	"solution": "Multiple are deployed models in parallel. You can send one request to the models at once to acquire multiple predictions, or an integrated prediciton.",
+	"consequences": "Pros: You can tune resource usage independently and isolate failure.\nYou may develop model and system without having dependency on other models.                                Cons: The system may become complex.\nFor synchronous usecase, the slowest inference becomes bottleneck.\nFor asynchronous usecase, you have to let the postprocess to manage time lag between prediction latencies.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter4_serving_patterns/horizontal_microservice_pattern",
+	"related": [
+		"Microservice vertical pattern"
+	],
+	"categories": [
+		"Architecture"
+	],
+	"resources": [
+		"124",
+		"012032",
+		"012113",
+		"012128"
+	]
+}

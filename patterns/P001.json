@@ -1,0 +1,21 @@
+{
+	"id": "001",
+	"name": "Encapsulating ML Models within Rulebase Safeguards",
+	"aka": "",
+	"motivation": "Since prediction by Machine Learning (ML) models is often difficult to guarantee correctness, ML models cannot be used directly for security-related functions. Furthermore, ML models are unstable and vulnerable to adversarial attacks, data noise, and drift.",
+	"solution": "Introduce a rule-based mechanism and provide the rule-matched results as outputs for the specific inputs",
+	"consequences": "Reduced safety risks for the ML-based application.",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Safety"
+	],
+	"resources": [
+		"001",
+		"012112",
+		"012113",
+		"012128"
+	]
+}

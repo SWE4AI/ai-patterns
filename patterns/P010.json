@@ -1,0 +1,20 @@
+{
+	"id": "010",
+	"name": "Federated Learner",
+	"aka": "",
+	"motivation": "How can ML be performed on standardized data when 'traditional' ML fails?",
+	"solution": "Federated learning can be viewed as an architectural pattern that performs model training locally at each\nclient and ensembles the model update centrally",
+	"consequences": "No need for central data collection; however, data needs to be standardized",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"ML pattern"
+	],
+	"resources": [
+		"003,117",
+		"005019",
+		"001013"
+	]
+}

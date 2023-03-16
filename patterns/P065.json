@@ -1,0 +1,18 @@
+{
+	"id": "065",
+	"name": "Multiple stage prediction pattern",
+	"aka": "",
+	"motivation": "Prediction models are quick for structured data, but heavy when data is unstructured.",
+	"solution": "Have two prediction servers; one for quick responses and one for the slower part",
+	"consequences": "Pro: Quick response, and still eventual accuracy. Con:Multiple servers and interfaces needed",
+	"examples": "For web applications, it is important to take a balance of speed and accuracy, and especially for interactive applications, it is possible to consider a usecase where you first return a quick prediction, and then add the better ones in the next screen or downward.",
+	"related": [
+		""
+	],
+	"categories": [
+		"Deployment"
+	],
+	"resources": [
+		"124"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"id": "013",
+	"name": "Secure Virtual Premise (SVP)",
+	"aka": "",
+	"motivation": "Machine Learning (ML) requires large training data sets which typically exist in large enterprises that can afford to develop ML concepts. Small companies, however, might\ncollect data or define models but must rely on collaborations with distributed stakeholders for developing AI solutions.\nHence, trusted collaborations in AI engineering are needed for empowering ML beyond large companies",
+	"solution": "A SVP connects distributed computation and storage resources (both physical and virtual)\ninto a large virtual resource space for AI training and enforces a perimeter around this space.",
+	"consequences": "Developers can focus on\napplication design while having access to AI artifacts and AI data, thus accelerating the system development.",
+	"examples": "Presented in resource 008",
+	"related": [
+		"AI Pipelines"
+	],
+	"categories": [
+		"Security"
+	],
+	"resources": [
+		"008"
+	]
+}

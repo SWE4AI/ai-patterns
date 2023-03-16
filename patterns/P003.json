@@ -1,0 +1,20 @@
+{
+	"id": "003",
+	"name": "Client-Server",
+	"aka": "",
+	"motivation": "A number of users/applications requires data from an application.",
+	"solution": "One component has a role of server and at least one component has the role of client, initiating connections in order to obtain some service.",
+	"consequences": "The data, as well as the network peripherals, are centrally controlled. A disadvantage, however, is that the server is expensive to purchase and manage.",
+	"examples": "A classic example of this architecture pattern is the World Wide Web.",
+	"related": [
+		""
+	],
+	"categories": [
+		"Architecture",
+		"Traditional"
+	],
+	"resources": [
+		"002",
+		"010002"
+	]
+}

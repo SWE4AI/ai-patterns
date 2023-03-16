@@ -1,0 +1,19 @@
+{
+	"id": "015",
+	"name": "AI Service for Edge Devices",
+	"aka": "",
+	"motivation": "When bringing AI services onto edge devices, additional preprocessing and postprocessing of data is required in order to build an end-to-end service.",
+	"solution": "Put the AI model as well as an AI Service Framework in one container, loosely coupled. AI Service Framework contains config mgmt, network interfaces and function calls to the AI model implementation",
+	"consequences": "Provides AI as a service, which means it includes\npre-processing and postprocessing, as well as the model itself. This makes it easy to build and maintain an AI service for an edge device",
+	"examples": "011, 012010",
+	"related": [
+		"Microservices"
+	],
+	"categories": [
+		"Architecture"
+	],
+	"resources": [
+		"011",
+		"011102"
+	]
+}

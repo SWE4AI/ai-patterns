@@ -1,0 +1,20 @@
+{
+	"id": "029",
+	"name": "Fairness Lens",
+	"aka": "",
+	"motivation": "model learns human bias. \nDifferent groups are affected differently -> harmful / problematic bias",
+	"solution": "use preprocessing and postprocessing techniques to ensure that model predictions are fair and equitable for different groups of users and scenarios.",
+	"consequences": "continuously eolving area of research",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"ML pattern",
+		"Responsible AI"
+	],
+	"resources": [
+		"101",
+		"106"
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"id": "002",
+	"name": "Pipes and Filters",
+	"aka": "",
+	"motivation": "A system has to perform a variety of tasks of varying complexity on the data that it processes.",
+	"solution": "Data is processed through a series of procedures, which have different inputs at various stages and produce incremental results as the comparison of the query images and input image takes place.",
+	"consequences": "System becomes more flexible; removing, modifying and adding filters is easier than with a monolithic system",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Architecture",
+		"Traditional"
+	],
+	"resources": [
+		"002"
+	]
+}
