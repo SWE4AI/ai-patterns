@@ -1,11 +1,11 @@
 {
 	"id": "059",
-	"name": "Prep-pred pattern",
+	"name": "Model-in-image pattern",
 	"aka": "",
-	"motivation": "When you have different code-base, library or resource load requirements for preprocess and prediction.\nWhen you want to separate preprocess with prediction to divide issue in each resource to improve availability",
-	"solution": "divide preprocessing steps and the prediction model into separate resources",
-	"consequences": "Pros: (1) Able to use resource efficiently with fault isolation.\n(2) Flexibility in resource usage and scalability.\n(3) Able to select library and language versions for each component.\nCons: (1) Increases operation cost with complexity in resources.\n(2) Network connection in between preprocess and prediction may become bottleneck.",
-	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter4_serving_patterns/prep_pred_pattern",
+	"motivation": "When you want to unify versions of service environment and prediction model.",
+	"solution": "Including the model file into the server or container image. In the model-in-image pattern, you build a server or container image with the model file contained in it.",
+	"consequences": "Pros: Uniquely identify a server image with model file version.\nCons: You need to define a complete pipeline of a model training and image building.\nTakes longer to build image and deploy.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter3_release_patterns/model_in_image_pattern",
 	"related": [
 		""
 	],

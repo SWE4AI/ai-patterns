@@ -1,20 +1,20 @@
 {
 	"id": "021",
-	"name": "Stateless Serving Function",
+	"name": "Continued Model Evaluation",
 	"aka": "",
-	"motivation": "Serve thousands to millions of prediction requests per second.",
-	"solution": "Design ML systwm around stateless function that captures the architecture and weights of a trained model\n1) Export the model into a format that captures the mathematical core of the model and is programming language agnostic\n2) In the production system, the formula consisting of the \"forward\" calculations of the model is restored as a stateless function\n3) The stateless function is deployed into a framework that provides a REST endpoint",
+	"motivation": "Problem of needing to take action when a deployed model is no longer fit-for-purpose.",
+	"solution": "Continuously monitor the model's predictive performance with the same evaluation metrics used during development. This is used to determine if changes to a model are working as intended.",
 	"consequences": "",
-	"examples": "",
+	"examples": "(1) Saving predictions\n(2) Capturing ground truth",
 	"related": [
 		""
 	],
 	"categories": [
-		"Deployment",
-		"Design Patterns for Resilient Serving"
+		"Testing & Quality Assurance"
 	],
 	"resources": [
 		"101",
-		"106"
+		"106",
+		"012103"
 	]
 }

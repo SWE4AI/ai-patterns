@@ -1,9 +1,9 @@
 {
 	"id": "030",
-	"name": "Proxy Pattern",
+	"name": "Functional-Style Architecture",
 	"aka": "",
-	"motivation": "Provide a substitute for the production database or service. \n\n1) scale serving to multiple machine, but want to only provide one endpoint\n1) reduce amount of compute required",
-	"solution": "1) use a reverse proxy to serve models\n2) us a cache proxy to serve queries",
+	"motivation": "ML systems require a significant amount of data processing and transformation. The deployed application, however, can become very complex and difficult to manage if this pattern is replicated.",
+	"solution": "A functional-style approach of making discrete transformations to data and passing results to the next stage allows for processes to be better optimized and managed, reducing memory and storage requirements while also increasing efficiency. Additionally, as elastic cloud systems may lose nodes from time to time, queuing and messaging can buffer data coming into the ML system and ensure everything gets processed.",
 	"consequences": "",
 	"examples": "",
 	"related": [
@@ -14,6 +14,6 @@
 		"Traditional"
 	],
 	"resources": [
-		"103"
+		"109"
 	]
 }

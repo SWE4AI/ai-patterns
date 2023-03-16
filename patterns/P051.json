@@ -1,19 +1,20 @@
 {
 	"id": "051",
-	"name": "Builder Pattern",
+	"name": "Asynchronous pattern",
 	"aka": "",
-	"motivation": "",
-	"solution": "Separate the construction of a complex object from its representation",
-	"consequences": "",
-	"examples": "",
+	"motivation": "When in your business logic, the next step in the process does not depend on the prediction.",
+	"solution": "Place a queue or cache in between the client and predictor",
+	"consequences": "Separation of a prediction request and prediction retrieval.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter4_serving_patterns/asynchronous_pattern",
 	"related": [
-		""
+		"Synchronous Pattern"
 	],
 	"categories": [
-		"Implementation",
+		"Deployment",
+		"Architecture",
 		"Traditional"
 	],
 	"resources": [
-		"120"
+		"124"
 	]
 }

@@ -1,0 +1,4 @@
+const e="018",t="Lambda Architecture Pattern",n="",s="Different components in a system have different performance requirements that need to be satisfied, e.g., some are focused on throughput and others on response time.",a=`Group the components based on their latency requirements into three layers:
+(1) batch layer ingests and stores large amounts of data
+(2) speed layer processes updates to the data in low-latency
+(3) serving layer provides precalculated results in a low-latency fashion`,o="",r="Software Architecture for Human-AI teaming in smart manifacturing",c=[""],i=["Architecture","Traditional"],u=["023","005011","012005","012113","012122","012128"],l={id:e,name:t,aka:n,motivation:s,solution:a,consequences:o,examples:r,related:c,categories:i,resources:u};export{n as aka,i as categories,o as consequences,l as default,r as examples,e as id,s as motivation,t as name,c as related,u as resources,a as solution};

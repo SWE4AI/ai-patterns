@@ -1,20 +1,18 @@
 {
 	"id": "042",
-	"name": "Replay",
+	"name": "Model Published as Data",
 	"aka": "",
-	"motivation": "Need a way to test models and operational data",
-	"solution": "Invest in a batch test framework",
-	"consequences": "",
-	"examples": "-web search replay query logs and look at changes in rank of clicked documents\n- recommender systems\n- messaging inbox replay",
+	"motivation": "There is a simplicity-flexibility trade-off in deployment; it is required to ingest the model at runtime",
+	"solution": "The training process publishes a trained model to a streaming platform (i.e. Apache Kafka) which will be consumed at runtime by the application, instead of build time — eligible to subscribe for any model updates.",
+	"consequences": "Pre-trained: yes,\nOn-the-fly-predictions: yes. Maintaining the infrastructure required for this archeticutre demands much more engineering sophistication, however ML models can be updated without any applications needing to be redeployed — this is because the model can be ingested at runtime.",
+	"examples": "",
 	"related": [
 		""
 	],
 	"categories": [
-		"QoS",
-		"Testing",
-		"Traditional"
+		"Deployment"
 	],
 	"resources": [
-		"112"
+		"113"
 	]
 }
