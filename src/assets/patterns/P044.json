@@ -1,19 +1,19 @@
 {
 	"id": "044",
-	"name": "Giveaway",
+	"name": "State Pattern",
 	"aka": "",
-	"motivation": "Need low risk testing or new data",
-	"solution": "Give away service to non-customers\ngive away a related service",
+	"motivation": "",
+	"solution": "Allow an object to alter its behavior when its internal state changes",
 	"consequences": "",
 	"examples": "",
 	"related": [
-		"honey trap"
+		""
 	],
 	"categories": [
-		"Process",
+		"Implementation",
 		"Traditional"
 	],
 	"resources": [
-		"112"
+		"120"
 	]
 }

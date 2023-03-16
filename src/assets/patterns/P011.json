@@ -1,18 +1,21 @@
 {
 	"id": "011",
-	"name": "Audit Black Box",
-	"aka": "",
-	"motivation": "There is a strong desire for continuously monitoring and validating AI systems post deployment for ethical requirements but current operation practices provide lim-\nited guidance.",
-	"solution": "Ethical metric data is captured at run time\nby a black box for auditing purposes.",
-	"consequences": "An AI system can be monitored continuously; Auditing introduces more complexity and effort. Designing the ethical black box is challenging as the ethical metrics need to be identified for data collection.",
-	"examples": "",
+	"name": "AI Pipelines",
+	"aka": "Sequential Decomposition",
+	"motivation": "Complex prediction or synthesis use cases are often difficult to accomplish with a single AI tool or model.",
+	"solution": "Divide the problem into smaller consecutive steps, then combine several existing AI tools or custom models into an inference-time AI pipeline, where each specialized tool or model is responsible for a single step.",
+	"consequences": "More tools and models need to be integrated, but the provided is result is of higher quality. Each step can be optimized individually.",
+	"examples": "Typical computer vision inference pipelines as described in 126",
 	"related": [
-		""
+		"Pipes and Filters"
 	],
 	"categories": [
-		"Safety"
+		"Architecture",
+		"Topology"
 	],
 	"resources": [
-		"003,129"
+		"008",
+		"126",
+		"103"
 	]
 }

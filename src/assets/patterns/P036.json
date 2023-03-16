@@ -1,18 +1,19 @@
 {
 	"id": "036",
-	"name": "Functional-Style Architecture",
+	"name": "Replay",
 	"aka": "",
-	"motivation": "ML systems require a significant amount of data processing and transformation. The deployed application, however, can become very complex and difficult to manage if this pattern is replicated.",
-	"solution": "a functional-style approach of making discrete transformations to data and passing results to the next stage allows for processes to be better optimized and managed, reducing memory and storage requirements while also increasing efficiency. Additionally, as elastic cloud systems may lose nodes from time to time, queuing and messaging can buffer data coming into the ML system and ensure everything gets processed.",
+	"motivation": "Need a way to test models and operational data.",
+	"solution": "Invest in a batch test framework.",
 	"consequences": "",
-	"examples": "",
+	"examples": "Web search: replay query logs and look at changes in rank of clicked documents\n- Recommender systems\n- Messaging inbox replay",
 	"related": [
 		""
 	],
 	"categories": [
-		"Architecture"
+		"Testing & Quality Assurance",
+		"Traditional"
 	],
 	"resources": [
-		"109"
+		"112"
 	]
 }
