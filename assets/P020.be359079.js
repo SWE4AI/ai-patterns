@@ -1,0 +1,4 @@
+const e="020",t="Stateless Serving Function",o="",s="Serve thousands to millions of prediction requests per second.",n=`Design ML system around stateless function that captures the architecture and weights of a trained model
+1) Export the model into a format that captures the mathematical core of the model and is programming language agnostic
+2) In the production system, the formula consisting of the "forward" calculations of the model is restored as a stateless function
+3) The stateless function is deployed into a framework that provides a REST endpoint`,a="",i="",c=["Batch Serving"],r=["Deployment","Traditional"],l=["101","106"],d={id:e,name:t,aka:o,motivation:s,solution:n,consequences:a,examples:i,related:c,categories:r,resources:l};export{o as aka,r as categories,a as consequences,d as default,i as examples,e as id,s as motivation,t as name,c as related,l as resources,n as solution};

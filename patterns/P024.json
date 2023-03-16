@@ -1,0 +1,19 @@
+{
+	"id": "024",
+	"name": "Proxy Pattern",
+	"aka": "",
+	"motivation": "A substitute for the production database or service is needed. It should: \n1) scale serving to multiple machines, but only provide one endpoint\n2) reduce the needed amount of computational resources",
+	"solution": "1) Use a reverse proxy to serve models\n2) Use a cache proxy to serve queries",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Architecture",
+		"Traditional"
+	],
+	"resources": [
+		"103"
+	]
+}

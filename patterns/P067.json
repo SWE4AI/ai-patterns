@@ -1,0 +1,20 @@
+{
+	"id": "067",
+	"name": "Discard PoC code",
+	"aka": "",
+	"motivation": "Code written for a PoC often includes shortcuts, is hard to maintain or contains unused code lines",
+	"solution": "Discard PoC code and rebuild the code using the findings of the PoC code",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Process",
+		"Traditional"
+	],
+	"resources": [
+		"012113",
+		"012128"
+	]
+}

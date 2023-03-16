@@ -1,0 +1,19 @@
+{
+	"id": "069",
+	"name": "Data flows up, Model flows down",
+	"aka": "",
+	"motivation": "",
+	"solution": "Use a shared model to predict in the cloud + use federated learning approach on the client. Pos: keep all training data on device",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Implementation"
+	],
+	"resources": [
+		"012113",
+		"012128"
+	]
+}

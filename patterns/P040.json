@@ -1,0 +1,18 @@
+{
+	"id": "040",
+	"name": "Model Embedded in Application",
+	"aka": "",
+	"motivation": "A simple(r) deployment model is needed.",
+	"solution": "The trained model is embedded in the application as a dependency.",
+	"consequences": "pre-trained: yes\non-the-fly-predictions: yes\n\nTo update the model, the whole application needs to be redeployed.",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Deployment"
+	],
+	"resources": [
+		"113"
+	]
+}
