@@ -52,7 +52,8 @@
 </template>
 
 <script>
-import json from "./../assets/resources/resources.json";
+import json from "../../public/resources/resources.json";
+// import json from "./resources*.js"
 
 export default {
   name: "PatternDetail",
@@ -67,21 +68,33 @@ export default {
     'categories'
   ],
   data() {
-    let resFile = import.meta.glob("@/assets/**/resources*.json");
-    for (const file in resFile){
-      var json;
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            json =  JSON.parse(this.responseText)
-          }
-      };
-      xhttp.open("GET", file, false);
-      xhttp.send();
-      return {
-        resourcePapers: json
-      }
+    return{
+      resourcePapers: json
     }
+    // let fileList = import.meta.glob("./resources*.js");
+
+    //   // Then import all files and push the patterns from them into the base array
+    //   for (const file in fileList) {
+    // let resFile = import.meta.glob("@/**/resources*.json");
+    // for (const file in resFile){
+    //   var json;
+    //   var xhttp = new XMLHttpRequest();
+    //   xhttp.onreadystatechange = function() {
+    //       if (this.readyState == 4 && this.status == 200) {
+    //         json =  JSON.parse(this.responseText)
+    //       }
+    //   };
+    //   xhttp.open("GET", file, false);
+    //   xhttp.send();
+    //   import(
+    //         file /* @vite-ignore */
+    //         ).then((content) => {
+    //           return {
+    //             resourcePapers: content
+    //           }
+    //   })
+     
+    // }
   }, methods: {
     getResource(id){
       let resource = this.resourcePapers.filter((item) => {

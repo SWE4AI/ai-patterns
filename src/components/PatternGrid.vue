@@ -74,15 +74,18 @@ export default {
   },
   methods: {
     getPatternData() {
+      // var path = require('path');
+      // app.use(express.static(path.join(__dirname,'public')));
       // Import all file paths from the patterns directory
-      let fileList = import.meta.glob("@/assets/**/P*.json");
+      let fileList = import.meta.glob("../../public/patterns/*.json");
+      console.log(fileList)
       // Then import all files and push the patterns from them into the base array
       for (const file in fileList) {
         console.log(file)
         // const res = fetch(file).then(
         //   this.patterns[this.patterns.length] = res.json()
         // )
-        // console.log(res)
+        // // console.log(res)
         var json;
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
