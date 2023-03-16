@@ -68,11 +68,10 @@ export default {
       this.resourcePapers = needed;
     },
     getResource(id) {
-      console.log(this.resourcePapers);
       let resource = this.resourcePapers.filter((item) => {
         return item.ID === id;
       })[0];
-      let resourceText = resource ? resource.authors + " - " + resource.name + " (" + resource.year.toString() + ")" : "none";
+      let resourceText = resource ? resource.authors + " - " + resource.name + " (" + resource.year.toString() + ")" : "";
       if (resource && resource.doi) {
         resourceText += "; DOI: " + resource.doi;
       }

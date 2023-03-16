@@ -1,0 +1,20 @@
+{
+	"id": "039",
+	"name": "Two-Phase Predictions",
+	"aka": "Cascade Predictions, Multiple stage prediction pattern",
+	"motivation": "Executing large, complex models can be time-consuming and costly, especially if lightweight clients like mobile or IoT devices are involved.",
+	"solution": "Split the prediction into two phases. A simple, fast model is executed first on the client. Afterwards, a large, complex model is optionally executed in the cloud for deeper insights.",
+	"consequences": "Prediction response time is reduced for some cases. The number of large, expensive predictions is reduced. The client has a fall-back model when there is no Internet connection.",
+	"examples": "Voice activation in AI assistants like Alexa or Google Assistant",
+	"related": [
+		""
+	],
+	"categories": [
+		"Deployment"
+	],
+	"resources": [
+		"101",
+		"106",
+		"124"
+	]
+}

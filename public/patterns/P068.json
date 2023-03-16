@@ -1,0 +1,19 @@
+{
+	"id": "068",
+	"name": "Parameter-Server Abstraction",
+	"aka": "",
+	"motivation": "Abstractions for distribute learning are lacking",
+	"solution": "Distribute data and workload over worker nodes. Server nodes has globally shared parameters.",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Architecture"
+	],
+	"resources": [
+		"012113",
+		"012128"
+	]
+}

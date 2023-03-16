@@ -1,0 +1,19 @@
+{
+	"id": "007",
+	"name": "Ethics credentials",
+	"aka": "Verifiable ethical credentials",
+	"motivation": "Responsible AI requirements are either omitted or mostly stated as high-level objectives, and not specified explicitly in a verifiable way as expected system outputs. Because of this, users may trust an AI system less, or even refrain from using it.",
+	"solution": "Provide verifiable ethics credentials for your AI system or component. Using publicly accessible and trusted data infrastructure, the credentials can be verified as proof of ethical compliance. Additionally, users may also have to verify their credentials before getting access to the AI system.",
+	"consequences": "Trust and system acceptance increases, and awareness of ethical issues is raised. However, a trusted public data infrastructure is needed, and credentials need to be maintained and potentially refreshed from time to time.",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Security & Safety"
+	],
+	"resources": [
+		"003",
+		"129"
+	]
+}

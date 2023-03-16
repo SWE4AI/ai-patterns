@@ -1,0 +1,29 @@
+{
+	"id": "023",
+	"name": "Workflow Pipeline",
+	"aka": "",
+	"motivation": "Creating an end-to-end reproducible training and deployment pipeline for a machine learning component is difficult. Data science notebooks can run a whole pipeline, but they do not scale.",
+	"solution": "Make each pipeline step a separate containerized service. Services are orchestrated and chained together to form pipelines that can be run via REST API calls.",
+	"consequences": "The portability, scalability, and maintainability of the individual pipeline steps is improved, at the cost of an overall more complex solution.",
+	"examples": "012024",
+	"related": [
+		""
+	],
+	"categories": [
+		"Architecture",
+		"Topology"
+	],
+	"resources": [
+		"008",
+		"009",
+		"125",
+		"126",
+		"101",
+		"102",
+		"106",
+		"112",
+		"103",
+		"012014",
+		"012024"
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"id": "032",
+	"name": "Shadow",
+	"aka": "",
+	"motivation": "A legacy system is an input to critical processes and operations",
+	"solution": "Develop a new system and run it in parallel to test output or regularly audit.\nApplies to upgrades to input pipeline.",
+	"consequences": "",
+	"examples": "",
+	"related": [
+		""
+	],
+	"categories": [
+		"Process",
+		"Traditional"
+	],
+	"resources": [
+		"112"
+	]
+}

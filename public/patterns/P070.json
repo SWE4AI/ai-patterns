@@ -1,0 +1,18 @@
+{
+	"id": "070",
+	"name": "Condition-based-serving pattern",
+	"aka": "",
+	"motivation": "When prediction target varies a lot by condition. When you can conditionally select a model in a rule-based manner.",
+	"solution": "Deploy various models and define selection rules for them. Depending on certain attributes of the input data, the most adequate model is used.",
+	"consequences": "Positive: Select an adequate model depending on condition.\nNegative: Operational cost raise with number of models.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter6_operation_management/condition_based_pattern",
+	"related": [
+		""
+	],
+	"categories": [
+		"Deployment"
+	],
+	"resources": [
+		"124"
+	]
+}
