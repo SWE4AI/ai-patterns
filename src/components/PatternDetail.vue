@@ -41,6 +41,8 @@
 </template>
 
 <script>
+import json from '../assets/resources/resources.json';
+
 export default {
   name: "PatternDetail",
   props: [
@@ -60,24 +62,17 @@ export default {
     }
   }, methods: {
     getResources() {
-      // Import all file paths from the resources directory
-      let fileList = import.meta.glob("../assets/**/R*.json");
-      // Then import all resources WHICH ARE NEEDED
-      for (const file in fileList) {
-        import(
-            file /* @vite-ignore */
-            ).then((content) => {
-          if (this.resources.includes(content.ID)) {
-            this.resourcePapers[this.resourcePapers.length] = content;
-          }
-        })
-      }
+      let needed = json.filter((item) => {
+        return this.resources.includes(item.ID);
+      });
+      this.resourcePapers = needed;
     },
     getResource(id) {
+      console.log(this.resourcePapers);
       let resource = this.resourcePapers.filter((item) => {
         return item.ID === id;
       })[0];
-      let resourceText = resource ? resource.authors + " - " + resource.name + " (" + resource.year.toString() + ")" : "";
+      let resourceText = resource ? resource.authors + " - " + resource.name + " (" + resource.year.toString() + ")" : "none";
       if (resource && resource.doi) {
         resourceText += "; DOI: " + resource.doi;
       }

@@ -1,0 +1,2 @@
+const e="032",s="Shadow",t="",o="A legacy system is an input to critical processes and operations",n=`Develop a new system and run it in parallel to test output or regularly audit.
+Applies to upgrades to input pipeline.`,a="",c="",i=[""],r=["Process","Traditional"],l=["112"],p={id:e,name:s,aka:t,motivation:o,solution:n,consequences:a,examples:c,related:i,categories:r,resources:l};export{t as aka,r as categories,a as consequences,p as default,c as examples,e as id,o as motivation,s as name,i as related,l as resources,n as solution};
