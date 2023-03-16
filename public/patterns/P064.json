@@ -1,19 +1,20 @@
 {
 	"id": "064",
-	"name": "(Prediction) Circuit break pattern",
+	"name": "Daisy Architecture",
 	"aka": "",
-	"motivation": "When the amount or frequency of requests to prediction suddenly increases, it can outpace the velocity of scaling. Complete outages are to avoid",
-	"solution": "It is reasonable to choose to cancel a certain number of request to stabilize the current prediction service, until the scale out completes to respond all the predictions.",
-	"consequences": "Pros: Avoid complete outage of the service.\nIt allows to scale out prediction servers without lowering the current resource availability. Cons:Requires a fallback plan for cancelled requests.",
-	"examples": "-",
+	"motivation": "Example: organisations acquire the ability to scale their premium content production processes via the use of machine learning, text analytics and annotation techniques, and then extend the coverage of that tooling over as much of their remaining content geography as possible",
+	"solution": "Switch from content production pipelines that are a.) push-based; b.) manual and c.) linear; to content enrichment cycles that are a.) pull-based; b.) automated; and c.) on-demand and iterative",
+	"consequences": "Result of three technical enablers:\n(1) Influence of Kanban on software design\n(2) Scaling of automated content analysis and rich metadata creation\n(3) Adoption of microservice architectures",
+	"examples": "",
 	"related": [
 		""
 	],
 	"categories": [
-		"QoS",
-		"Traditional"
+		"Architecture"
 	],
 	"resources": [
-		"124"
+		"005008",
+		"001013",
+		"012029"
 	]
 }

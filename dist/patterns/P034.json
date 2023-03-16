@@ -1,18 +1,20 @@
 {
 	"id": "034",
-	"name": "End-To-End Tests",
+	"name": "Internal Feedback",
 	"aka": "",
-	"motivation": "A faulty ML model or pipeline shouldn’t be allowed to be released and produce poor results in the app.",
-	"solution": "Manual smoke testing is always useful, and keeping the tests fresh and up-to-date with new features, use cases and data is an ongoing task. ML model predictions are no different. If a part of the app is served by an ML model recommendation, identify the assertions that can be made",
+	"motivation": "A low risk way to test new models with live users is needed.",
+	"solution": "Use your own product internally.\nGive internal users a way to turn on new models, use the product, and give feedback.\nNote: this is also used to develop training data.",
 	"consequences": "",
 	"examples": "",
 	"related": [
-		""
+		"Bathwater",
+		"Follow the Crowd"
 	],
 	"categories": [
-		"Testing"
+		"Process",
+		"Traditional"
 	],
 	"resources": [
-		"109"
+		"112"
 	]
 }

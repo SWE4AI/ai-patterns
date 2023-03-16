@@ -1,19 +1,23 @@
 {
 	"id": "014",
-	"name": "Fluid Architecture",
+	"name": "Distinguish Business Logic from\nML Model",
 	"aka": "",
-	"motivation": "Classical architecture and UX patterns, though largely successful, suffer the following limitations in AI contexts: (1) Static interfaces, (2) Lack of bidirectionality, (3) Slow updates, (4) subiptimal personalization, (5) interpretability and explainability",
-	"solution": "Additional to any AI that runs in a backend, there is an AI in the frontend to evolve the interface and adapt it to changes. Moreover, there is an AI orchestrator. Its purposes are to monitor the performance of both the frontend’s AI and the backend’s AI to make sure that their respective performance is satisfactory and to witness contract negotiations to see how the interactions between the frontend and backend evolve over time.",
-	"consequences": "The aforementioned limitations are alleviated.",
-	"examples": "-",
+	"motivation": "Machine Learning (ML) systems are complex because their ML components must be (re)trained regularly and have an intrinsic non-deterministic behavior. Similar to other systems, the business requirements for these systems as well as ML algorithms change over time.",
+	"solution": "Define clear APIs between traditional and\nML components. Place business and ML components with different responsibilities into three layers. Divide data flows into three.",
+	"consequences": "Decoupling “traditional” business and ML components allows the ML components to be monitored and adjusted to meet users’ requirements and changing inputs.",
+	"examples": "",
 	"related": [
-		""
+		"Separation of Concerns",
+		"Multi-layer Pattern"
 	],
 	"categories": [
-		"Architecture",
-		"Topology"
+		"Architecture"
 	],
 	"resources": [
-		"010"
+		"012",
+		"001013",
+		"012017",
+		"012113",
+		"012128"
 	]
 }

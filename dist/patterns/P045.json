@@ -1,18 +1,19 @@
 {
 	"id": "045",
-	"name": "Model Embedded in Application",
+	"name": "Builder Pattern",
 	"aka": "",
-	"motivation": "Want simple model deployment",
-	"solution": "Trained model is embedded in the application as a dependency",
-	"consequences": "pre-trained: yes\non-the-fly-predictions: yes\n\nto update model, whole application needs to be redeployed",
+	"motivation": "",
+	"solution": "Separate the construction of a complex object from its representation",
+	"consequences": "",
 	"examples": "",
 	"related": [
 		""
 	],
 	"categories": [
-		"Deployment"
+		"Implementation",
+		"Traditional"
 	],
 	"resources": [
-		"113"
+		"120"
 	]
 }

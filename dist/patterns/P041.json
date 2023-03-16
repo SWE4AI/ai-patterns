@@ -1,21 +1,18 @@
 {
 	"id": "041",
-	"name": "Handshake or \"Hand Buzzer",
+	"name": "Dedicated Model API",
 	"aka": "",
-	"motivation": "System depends on inputs delivered outside of the normal release process",
-	"solution": "Create a \"handshake\" normalization process\nRelease handshake process as software associated with input and version \nRegularly check for significant changes and send alerts",
-	"consequences": "",
+	"motivation": "Differing from the embedded model approach, this method compromises simplicity for flexibility.\n→ flexible model deployment needed",
+	"solution": "The trained machine learning model becomes a dependency of a separate Machine Learning API service.\nA separate microservice has been dedicated to Machine learning and is exclusively responsible for returning the prediction.",
+	"consequences": "pre-trained: yes\non-the-fly-predictions: -\n\nmaintain a separate service there is increased complexity with this architecture, but there is more flexibility since the model deployments are now independent of the main application deployments. \n\n model microservice or main server can be scaled separately to deal with higher volumes of traffic or to potentially serve other applications",
 	"examples": "",
 	"related": [
 		""
 	],
 	"categories": [
-		"Architecture",
-		"Traditional"
+		"Deployment"
 	],
 	"resources": [
-		"112",
-		"012112",
-		"012134"
+		"113"
 	]
 }

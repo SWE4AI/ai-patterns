@@ -1,60 +1,46 @@
 <template>
-     <v-row class="pa-2">
-      <v-col cols="2"><b>Aliases:</b></v-col>
-       <v-col>
-        <v-card-text> {{ aka }}</v-card-text>
-      </v-col>
-    </v-row>
-     <v-row class="pa-2">
-      <v-col cols="2"><b>Motivation:</b></v-col>
-       <v-col>
-        <v-card-text>{{ motivation }}</v-card-text>
-      </v-col>
-    </v-row>
-     <v-row class="pa-2">
-      <v-col cols="2"><b>Solution:</b></v-col>
-       <v-col>
-        <v-card-text>{{ solution }}</v-card-text>
-      </v-col>
-    </v-row>
-     <v-row class="pa-2">
-      <v-col cols="2"><b>Consequences:</b></v-col>
-       <v-col>
-        <v-card-text>{{ consequences }}</v-card-text>
-      </v-col>
-    </v-row>
-     <v-row class="pa-2">
-      <v-col cols="2"><b>Examples:</b></v-col>
-       <v-col>
-        <v-card-text>{{ examples }}</v-card-text>
-      </v-col>
-    </v-row>
-     <v-row class="pa-2">
-      <v-col cols="2"><b>Resources:</b></v-col>
-       <v-col>
-        <v-card-text>
-          <ul>
-            <li v-for="resource of resources">{{ getResource(resource) }} </li>
-          </ul>
-        </v-card-text>
-      </v-col>
-    </v-row>
-    <v-row class="pa-2">
-      <v-col cols="2"><b>Categories:</b></v-col>
-       <v-col>
-        <v-card-text><span v-for="category of categories">{{ category }}, </span></v-card-text>
-      </v-col>
-    </v-row>
-    <v-card-actions >
-      <v-btn icon="mdi-help"/>
-      <v-btn icon="mdi-format-quote-close"/>
-    </v-card-actions>
+  <v-alert v-model="alert" type="success" transition="scale-transition" dark dense>Copied to clipboard!</v-alert>
+  <v-row class="pa-2">
+    <v-col cols="2"><b>Motivation:</b></v-col>
+    <v-col>
+      {{ motivation }}
+    </v-col>
+  </v-row>
+  <v-row class="pa-2">
+    <v-col cols="2"><b>Solution:</b></v-col>
+    <v-col>
+      {{ solution }}
+    </v-col>
+  </v-row>
+  <v-row class="pa-2">
+    <v-col cols="2"><b>Consequences:</b></v-col>
+    <v-col>
+      {{ consequences }}
+    </v-col>
+  </v-row>
+  <v-row class="pa-2">
+    <v-col cols="2"><b>Examples:</b></v-col>
+    <v-col>{{ examples }}
+    </v-col>
+  </v-row>
+  <v-row class="pa-2">
+    <v-col cols="2"><b>Resources:</b></v-col>
+    <v-col>
+      <div v-for="resource of resources" class="mb-3">
+        <p>{{ getResource(resource) }}</p>
+        <p><v-btn color="green" @click="copyToClipboard(getResource(resource))">Copy Citation</v-btn></p>
+      </div>
+    </v-col>
+  </v-row>
+  <v-row class="pa-2">
+    <v-col cols="2"><b>Categories:</b></v-col>
+    <v-col>
+      <p v-for="category of categories">{{ category }}</p>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
-// import json from "../../**/resources/resources.json";
-// import json from "./resources*.js"
-
 export default {
   name: "PatternDetail",
   props: [
@@ -68,41 +54,48 @@ export default {
     'categories'
   ],
   data() {
-    // return{
-    //   resourcePapers: json
-    // }
-    let fileList = import.meta.glob("/resources/resources.json");
-    
-    //   // Then import all files and push the patterns from them into the base array
-    //   for (const file in fileList) {
-      // let resFile = import.meta.glob("@/**/resources*.json");
-    for (const file in fileList){
-      var json;
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          json =  JSON.parse(this.responseText)
-        }
-      };
-      xhttp.open("GET", file, false);
-      xhttp.send();
-      // import(
-      //   file /* @vite-ignore */
-      //   ).then((content) => {
-      //     return {
-      //       resourcePapers: content
-      //     }
-    }
-      return{
-      resourcePapers: json
+    return {
+      resourcePapers: [],
+      alert: false,
     }
   }, methods: {
-    getResource(id){
+    getResources() {
+      let fileList = import.meta.glob("/resources/resources.json");
+      for (const file in fileList){
+        var json;
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            json = JSON.parse(this.responseText)
+          }
+        };
+        xhttp.open("GET", file, false);
+        xhttp.send();
+        this.resourcePapers = json
+        console.log(json)
+        return this.resourcePapers
+      }
+    },
+    getResource(id) {
       let resource = this.resourcePapers.filter((item) => {
-        return item.id === id;
+        return item.ID === id;
       })[0];
-      return resource.authors + "; " + resource.name + "; doi: " + resource.doi;
+      let resourceText = resource ? resource.authors + " - " + resource.name + " (" + resource.year.toString() + ")" : "";
+      if (resource && resource.doi) {
+        resourceText += "; DOI: " + resource.doi;
+      }
+      return resourceText;
+    },
+    copyToClipboard(stringToCopy){
+      navigator.clipboard.writeText(stringToCopy);
+      this.alert = true;
+      setTimeout(() => {
+        this.alert = false
+      }, 3000);
     }
+  },
+  mounted() {
+    this.getResources();
   }
 }
 </script>

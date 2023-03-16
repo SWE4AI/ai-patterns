@@ -1,29 +1,19 @@
 {
 	"id": "024",
-	"name": "Workflow Pipeline",
+	"name": "Proxy Pattern",
 	"aka": "",
-	"motivation": "Problem: creating an end-to-end reproducible pipeline by containerizing and orchestrating the steps in a machine learning process. Data Science notebooks can run a whole pipeline but they do not scale",
-	"solution": "make each step of pipeline a separate, containerized service. Container a chained together to make a pipeline that can be run with a REST API call.",
+	"motivation": "A substitute for the production database or service is needed. It should: \n1) scale serving to multiple machines, but only provide one endpoint\n2) reduce the needed amount of computational resources",
+	"solution": "1) Use a reverse proxy to serve models\n2) Use a cache proxy to serve queries",
 	"consequences": "",
-	"examples": "012024",
+	"examples": "",
 	"related": [
 		""
 	],
 	"categories": [
 		"Architecture",
-		"Topology",
-		"Reproducibility Design Pattern"
+		"Traditional"
 	],
 	"resources": [
-		"008",
-		"009",
-		"125",
-		"126",
-		"101",
-		"102",
-		"106",
-		"112",
-		"103",
-		"012014"
+		"103"
 	]
 }

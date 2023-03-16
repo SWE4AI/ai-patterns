@@ -1,20 +1,19 @@
 {
 	"id": "028",
-	"name": "Explainable Predictions",
+	"name": "End-To-End Tests",
 	"aka": "",
-	"motivation": "Goal: increase user trust. Why does a model makes a certain prediction?\n\nMetrics (e.g. accuracy) only tell one piece of the story",
-	"solution": "some models are interpretable by design (e.g. decision trees)\n\ncomplex models: use post hoc explainability (area of ongoing research): e.g. feature attributions\n2 types of feature attributions:\n- instance-level\n- global",
-	"consequences": "are only as good as the models training data, quality of model and the chosen baseline",
+	"motivation": "A faulty ML model or pipeline shouldn’t be allowed to be released and produce poor results in the app.",
+	"solution": "Manual smoke testing is always useful, and keeping the tests fresh and up-to-date with new features, use cases and data is an ongoing task. ML model predictions are no different. If a part of the app is served by an ML model recommendation, identify the assertions that can be made",
+	"consequences": "",
 	"examples": "",
 	"related": [
 		""
 	],
 	"categories": [
-		"ML pattern",
-		"Responsible AI"
+		"Testing & Quality Assurance",
+		"Traditional"
 	],
 	"resources": [
-		"101",
-		"106"
+		"109"
 	]
 }

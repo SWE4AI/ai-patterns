@@ -57,7 +57,7 @@
 import PatternDetail from "./PatternDetail.vue";
 
 export default {
-
+  
   name: "PatternGrid",
   components: {PatternDetail},
   data() {
@@ -74,18 +74,11 @@ export default {
   },
   methods: {
     getPatternData() {
-      // var path = require('path');
-      // app.use(express.static(path.join(__dirname,'public')));
-      // Import all file paths from the patterns directory
       let fileList = import.meta.glob("/patterns/P*.json");
       console.log(fileList)
       // Then import all files and push the patterns from them into the base array
       for (const file in fileList) {
         console.log(file)
-        // const res = fetch(file).then(
-        //   this.patterns[this.patterns.length] = res.json()
-        // )
-        // // console.log(res)
         var json;
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -96,13 +89,6 @@ export default {
         xhttp.open("GET", file, false);
         xhttp.send();
         this.patterns[this.patterns.length] = json
-        // this.patterns[this.patterns.length] = await res.json()
-        // const content = 
-        // import(
-        //   file /* @vite-ignore */
-        //   ).then((content) => {
-        //     this.patterns[this.patterns.length] = content;
-        // })
       }
       this.filteredPatterns = Object.assign({}, this.patterns);
       this.resetFilters();
@@ -181,9 +167,7 @@ export default {
       });
     },
     copyToClipboard(id) {
-      let pattern = JSON.stringify(this.patterns.filter((item) => {
-        return item.id === id;
-      })[0].default);
+      let pattern = JSON.stringify(this.patterns.filter((item) => {return item.id === id;})[0].default);
       navigator.clipboard.writeText(pattern);
     }
   },

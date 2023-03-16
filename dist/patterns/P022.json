@@ -1,21 +1,21 @@
 {
 	"id": "022",
-	"name": "Continued Model Evaluation",
+	"name": "Batch Serving",
 	"aka": "",
-	"motivation": "Problem of needing to take action when a deployed model is no longer fit-for-purpose.",
-	"solution": "Continuously monitor the model's predictive performance with the same evaluation metrics used during development. This is used to determine if changes to a model are working as intended.",
-	"consequences": "",
-	"examples": "Saving predictions\nCapturing ground truth",
+	"motivation": "Predictions need to be carried out asynchronously over large volumes of data (contrary to predictions for small, individual requests), e.g., generating personalized playlists every week. This is only applicable if there is no need for (near-)real-time predictions.",
+	"solution": "Use distributed data processing infrastructure (e.g, based on MapReduce) to asynchronously carry out complex ML inference tasks on a large number of computing nodes. The individual predictions are aggregated back into a single result.",
+	"consequences": "Positive: You can manage server resources flexibly and in strict accordance with demand. You may rerun the job in case of error. There is no requirement for high availability in your server system. Negative: You need a job management server. This pattern depends on the ability to split a task across multiple workers.",
+	"examples": "",
 	"related": [
-		""
+		"Stateless Serving Function"
 	],
 	"categories": [
-		"QoS",
-		"Design Patterns for Resilient Serving"
+		"Deployment",
+		"Traditional"
 	],
 	"resources": [
 		"101",
 		"106",
-		"012103"
+		"124"
 	]
 }

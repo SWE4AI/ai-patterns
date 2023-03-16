@@ -1,19 +1,20 @@
 {
 	"id": "033",
-	"name": "Infrastructure as Code",
+	"name": "Chop Shop",
 	"aka": "",
-	"motivation": "avoid deploying or configuring the infrastructure incorrectly",
-	"solution": "Use code to specify the infrastructure and run scripts to recreate and verify the infrastructure that the system needs. Similarly, the infrastructure required to build and test the ML models, as well as run them in production, should be defined as code.",
+	"motivation": "Legacy system represents significant investment of resources\noften rule based and capture valuable domain features",
+	"solution": "Isolate features and measure computing costs. Use selected features in new models and processes.",
 	"consequences": "",
 	"examples": "",
 	"related": [
-		"Serving template pattern"
+		"Legacy",
+		"Adversarial"
 	],
 	"categories": [
 		"Process",
 		"Traditional"
 	],
 	"resources": [
-		"109"
+		"112"
 	]
 }

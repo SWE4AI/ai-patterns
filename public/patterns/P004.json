@@ -2,10 +2,10 @@
 	"id": "004",
 	"name": "Model-View-Controller (MVC)",
 	"aka": "",
-	"motivation": "enhance system flexibility and reusability. Facilitate multiple views of the same data object and single view of multiple data objects.",
-	"solution": "includes three parts: Model (internal data), View (data representation) and Controller (I/O Controller)",
-	"consequences": "Only model layer should be altered -> greatly enhance the code reusability and system enpansibility",
-	"examples": "026",
+	"motivation": "The system is required to facilitate multiple views of the same data object and single view of multiple data objects.",
+	"solution": "Includes three parts: Model (internal data), View (data representation) and Controller (I/O Controller). Only the model layer should be altered.",
+	"consequences": "This pattern greatly enhances the code reusability and system enpansibility.",
+	"examples": "in Reference 026",
 	"related": [
 		""
 	],

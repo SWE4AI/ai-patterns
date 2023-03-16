@@ -1,17 +1,16 @@
 {
 	"id": "057",
-	"name": "Asynchronous pattern",
+	"name": "Prep-pred pattern",
 	"aka": "",
-	"motivation": "When in your business logic, the next step in the process does not depend on the prediction.",
-	"solution": "place a queue or cache in between the client and predictor",
-	"consequences": "Separation of a prediction request and prediction retrieval.",
-	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter4_serving_patterns/asynchronous_pattern",
+	"motivation": "When you have different code-base, library or resource load requirements for preprocess and prediction.\nWhen you want to separate preprocess with prediction to divide issue in each resource to improve availability",
+	"solution": "Divide preprocessing steps and the prediction model into separate resources",
+	"consequences": "Pros: (1) Able to use resource efficiently with fault isolation.\n(2) Flexibility in resource usage and scalability.\n(3) Able to select library and language versions for each component.\nCons: (1) Increases operation cost with complexity in resources.\n(2) Network connection in between preprocess and prediction may become bottleneck.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter4_serving_patterns/prep_pred_pattern",
 	"related": [
-		"Synchronous Pattern"
+		""
 	],
 	"categories": [
-		"Deployment",
-		"Architecture"
+		"Deployment"
 	],
 	"resources": [
 		"124"

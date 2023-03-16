@@ -1,20 +1,21 @@
 {
 	"id": "053",
-	"name": "Adapter Pattern",
+	"name": "Microservice horizontal pattern",
 	"aka": "",
-	"motivation": "",
-	"solution": "Convert the interface of a class into another interface clients expect.",
-	"consequences": "",
-	"examples": "",
+	"motivation": "When the workflow can execute multiple predictions in parallel. When you want to integrate prediction results at last. Required to run several predictions to one request",
+	"solution": "Multiple are deployed models in parallel. You can send one request to the models at once to acquire multiple predictions, or an integrated prediciton.",
+	"consequences": "Pros: (1) You can tune resource usage independently and isolate failure. (2) You may develop model and system without having dependency on other models.                                Cons: (1) The system may become complex.\nFor synchronous usecase, the slowest inference becomes bottleneck. (2) For asynchronous usecase, you have to let the postprocess to manage time lag between prediction latencies.",
+	"examples": "https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter4_serving_patterns/horizontal_microservice_pattern",
 	"related": [
-		""
+		"Microservice vertical pattern"
 	],
 	"categories": [
-		"Implementation",
-		"Traditional"
+		"Architecture"
 	],
 	"resources": [
-		"120",
-		"103"
+		"124",
+		"012032",
+		"012113",
+		"012128"
 	]
 }
