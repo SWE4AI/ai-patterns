@@ -62,20 +62,17 @@ export default {
     }
   }, methods: {
     getResources() {
-      console.log("this.resources: " + this.resources)
       let needed = json.filter((item) => {
         console.log("filter: " + this.resources.includes(item.ID.toString()))
         return this.resources.includes(item.ID);
       });
       this.resourcePapers = needed;
-      console.log("this.resourcePapers: " + this.resourcePapers)
     },
     getResource(idS) {
       console.log(idS)
       let resource = this.resourcePapers.filter((item) => {
         return item.ID === idS;
       })[0];
-      console.log("resource: " + resource)
       let resourceText = resource ? resource.authors + " - " + resource.name + " (" + resource.year.toString() + ")" : "";
       if (resource && resource.doi) {
         resourceText += "; DOI: " + resource.doi;
