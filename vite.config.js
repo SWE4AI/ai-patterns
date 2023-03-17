@@ -8,14 +8,14 @@ import vuetify from "vite-plugin-vuetify";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  publicPath: process.env.NODE_ENV === "production" ? "/ai-patterns/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/ai-patterns/" : "/ai-patterns/",
   plugins: [vue(), vuetify({ autoImport: true })],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  base: '',
+  base: '/ai-patterns/',
   rollupOptions: {
     output: {
       entryFileNames: `assets/[name].js`,
