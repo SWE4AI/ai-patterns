@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import json from '/ai-patterns/resources/resources.json';
+import json from '/resources/resources.json';
 
 export default {
   name: "PatternDetail",
