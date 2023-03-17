@@ -18,9 +18,9 @@ export default defineConfig({
   base: '',
   rollupOptions: {
     output: {
-      entryFileNames: `assets/[name].js`,
-      chunkFileNames: `assets/[name].js`,
-      assetFileNames: `assets/[name].[ext]`
+      entryFileNames: `assets/ai-patterns/[name].js`,
+      chunkFileNames: `assets/ai-patterns/[name].js`,
+      assetFileNames: `assets/ai-patterns/[name].[ext]`
     }
   }
 });
