@@ -8,7 +8,7 @@ import vuetify from "vite-plugin-vuetify";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  publicPath: process.env.NODE_ENV === "production" ? "/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/ai-patterns/" : "/",
   plugins: [vue(), vuetify({ autoImport: true })],
   resolve: {
     alias: {
