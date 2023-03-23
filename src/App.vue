@@ -89,7 +89,7 @@ export default {
     drawer: true,
     group: null,
     showAbout: false,
-    githubUrl: "https://github.tik.uni-stuttgart.de/st151210/forschungsprojekt-patterns-ai-based-systems",
+    githubUrl: "https://github.com/SWE4AI/ai-patterns",
   }),
   methods: {
     filter() {
