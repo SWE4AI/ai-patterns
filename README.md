@@ -1,5 +1,6 @@
-# Pattern Repository Webapp
-This is the pattern repository for our research project, browsable via the Web.
+# Design Patterns for AI-based Systems: A Web-based Repository
+This repository is the result of a literature study to collect and categorize design patterns for AI-based systems.
+The web application is hosted here: https://swe4ai.github.io/ai-patterns/
 
 ## Recommended IDE Setup
 
