@@ -48,7 +48,8 @@
           :consequences="this.selectedPattern.consequences"
           :examples="this.selectedPattern.examples"
           :resources="this.selectedPattern.resources"
-          :categories="this.selectedPattern.categories"></PatternDetail>
+          :categories="this.selectedPattern.categories"
+          :resourcePapers="this.resourcePapers"></PatternDetail>
     </v-card>
   </v-dialog>
 </template>
@@ -66,6 +67,7 @@ export default {
         categories: [''],
         onlyGeneric: false,
       },
+      resourcePapers: [],
       patterns: [],
       filteredPatterns: [],
       selectedPattern: {},
@@ -73,6 +75,13 @@ export default {
     };
   },
   methods: {
+    getResources() {
+      fetch('https://raw.githubusercontent.com/SWE4AI/ai-patterns/main/ai-patterns/resources/resources.json')
+        .then(res => res.json())
+        .then(json => {
+            this.resourcePapers = json;
+        });
+    },
     getPatternData() {
       fetch('https://api.github.com/repos/swe4ai/ai-patterns/contents/ai-patterns/patterns/')
         .then(list => list.json())
@@ -167,6 +176,7 @@ export default {
     }
   },
   mounted() {
+    this.getResources();
     this.getPatternData();
   },
 };
