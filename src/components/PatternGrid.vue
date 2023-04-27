@@ -74,14 +74,14 @@ export default {
   },
   methods: {
     getPatternData() {
-      fetch('https://api.github.com/repos/swe4ai/ai-patterns/contents/public/patterns')
+      fetch('https://api.github.com/repos/swe4ai/ai-patterns/contents/ai-patterns/patterns/')
         .then(list => list.json())
         .then(fileList =>{
           fileList.forEach(file => {
-            fetch('https://swe4ai.github.io/ai-patterns/patterns/' + file.name)
+            fetch('https://raw.githubusercontent.com/SWE4AI/ai-patterns/main/ai-patterns/patterns/' + file.name)
               .then(res => res.json())
               .then(json => {
-                this.patterns[this.patterns.length] = json
+                this.patterns.push(json)
             })
           });
           this.filteredPatterns = Object.assign({}, this.patterns);
