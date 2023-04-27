@@ -61,7 +61,7 @@ export default {
     }
   }, methods: {
     getResources() {
-        fetch('https://swe4ai.github.io/ai-patterns/resources/resources.json')
+        fetch('https://raw.githubusercontent.com/SWE4AI/ai-patterns/main/ai-patterns/resources/resources.json')
           .then(res => res.json())
           .then(json => {
             json.filter((item) => {
