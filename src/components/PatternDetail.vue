@@ -41,7 +41,6 @@
 </template>
 
 <script>
-import json from '/ai-patterns/resources/resources.json';
 
 export default {
   name: "PatternDetail",
@@ -62,11 +61,14 @@ export default {
     }
   }, methods: {
     getResources() {
-      let needed = json.filter((item) => {
-        console.log("filter: " + this.resources.includes(item.ID.toString()))
-        return this.resources.includes(item.ID);
-      });
-      this.resourcePapers = needed;
+        fetch('https://raw.githubusercontent.com/SWE4AI/ai-patterns/main/ai-patterns/resources/resources.json')
+          .then(res => res.json())
+          .then(json => {
+            json.filter((item) => {
+              console.log("filter: " + this.resources.includes(item.ID.toString()))
+              this.resourcePapers = this.resources.includes(item.ID);
+            });
+          });
     },
     getResource(idS) {
       console.log(idS)
