@@ -1,3 +1,0 @@
-const e="034",o="Internal Feedback",t="",s="A low risk way to test new models with live users is needed.",n=`Use your own product internally.
-Give internal users a way to turn on new models, use the product, and give feedback.
-Note: this is also used to develop training data.`,a="",c="",i=["Bathwater","Follow the Crowd"],r=["Process","Traditional"],l=["112"],d={id:e,name:o,aka:t,motivation:s,solution:n,consequences:a,examples:c,related:i,categories:r,resources:l};export{t as aka,r as categories,a as consequences,d as default,c as examples,e as id,s as motivation,o as name,i as related,l as resources,n as solution};

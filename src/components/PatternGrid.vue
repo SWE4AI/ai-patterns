@@ -74,24 +74,19 @@ export default {
   },
   methods: {
     getPatternData() {
-      let fileList = import.meta.glob("/ai-patterns/patterns/P*.json");
-      console.log(fileList)
-      // Then import all files and push the patterns from them into the base array
-      for (const file in fileList) {
-        console.log(file)
-        var json;
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-              json =  JSON.parse(this.responseText)
-            }
-        };
-        xhttp.open("GET", file, false);
-        xhttp.send();
-        this.patterns[this.patterns.length] = json
-      }
-      this.filteredPatterns = Object.assign({}, this.patterns);
-      this.resetFilters();
+      fetch('https://api.github.com/repos/swe4ai/ai-patterns/contents/public/patterns')
+        .then(list => list.json())
+        .then(fileList =>{
+          fileList.forEach(file => {
+            fetch('https://swe4ai.github.io/ai-patterns/patterns/' + file.name)
+              .then(res => res.json())
+              .then(json => {
+                this.patterns[this.patterns.length] = json
+            })
+          });
+          this.filteredPatterns = Object.assign({}, this.patterns);
+          this.resetFilters();
+      });
     },
     goToDetailView(id) {
       this.selectedPattern = this.filteredPatterns.filter((item) => {
