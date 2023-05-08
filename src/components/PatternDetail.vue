@@ -27,8 +27,8 @@
     <v-col cols="2"><b>Resources:</b></v-col>
     <v-col>
       <div v-for="resource of resources" class="mb-3">
-        <p>{{ getResource(resource) }}</p>
-        <p><v-btn color="green" @click="copyToClipboard(getResource(resource))">Copy Citation</v-btn></p>
+        <p>{{ getResource(resource, resourcePapers) }}</p>
+        <p><v-btn color="green" @click="copyToClipboard(getResource(resource, resourcePapers))">Copy Citation</v-btn></p>
       </div>
     </v-col>
   </v-row>
@@ -52,25 +52,17 @@ export default {
     'consequences',
     'examples',
     'resources',
-    'categories'
+    'categories',
+    'resourcePapers'
   ],
   data() {
     return {
-      resourcePapers: [],
       alert: false,
     }
   }, methods: {
-    getResources() {
-        fetch('https://raw.githubusercontent.com/SWE4AI/ai-patterns/main/ai-patterns/resources/resources.json')
-          .then(res => res.json())
-          .then(json => {
-              this.resourcePapers = json;
-          });
-    },
-    getResource(idS) {
-      console.log(idS)
-      let resource = this.resourcePapers.filter((item) => {
-        return item.ID === idS;
+    getResource(idS,resourcePapers) {
+      let resource = resourcePapers.filter((item) => {
+        return item.ID.toString() === idS.toString();
       })[0];
       let resourceText = resource ? resource.authors + " - " + resource.name + " (" + resource.year.toString() + ")" : "";
       if (resource && resource.doi) {
@@ -87,7 +79,7 @@ export default {
     }
   },
   mounted() {
-    this.getResources();
+    // this.getResources();
   }
 }
 </script>
