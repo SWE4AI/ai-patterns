@@ -9,27 +9,19 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: PatternGrid,
+      component: PatternGrid
     },
     {
       path: "/gridview",
       name: "gridview",
-      component: GridView,
+      component: GridView
     },
     {
-      path: "/about",
-      name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("../views/AboutView.vue"),
-    },
-    {
-      path: '/patterns/:id',
+      path: "/patterns/:id",
       name: "patterndetails",
-      component: PatternDetail,
+      component: PatternDetail
     }
-  ],
+  ]
 });
 
 export default router;

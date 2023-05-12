@@ -13,7 +13,7 @@
 
           <v-spacer></v-spacer>
 
-          <v-card-actions class="bg-grey-darken-3 ">
+          <v-card-actions class="bg-grey-darken-3">
             <v-tooltip top>
               <template v-slot:activator="{ on, attrs }">
                 <v-btn icon="mdi-open-in-new" @click="goToDetailView(pattern.id)"></v-btn>
@@ -37,19 +37,20 @@
       <v-list-item two-line class="bg-blue-accent-1 border-b-lg">
         <v-list-item-title class="text-h6 mb-1">{{ selectedPattern.name }}</v-list-item-title>
         <v-list-item-subtitle>{{ selectedPattern.aka }}&nbsp;</v-list-item-subtitle>
-        <v-icon class="close-detailview" @click="dialog = false;">mdi-close</v-icon>
+        <v-icon class="close-detailview" @click="dialog = false">mdi-close</v-icon>
       </v-list-item>
 
       <PatternDetail
-          :name="this.selectedPattern.name"
-          :aka="this.selectedPattern.aka"
-          :motivation="this.selectedPattern.motivation"
-          :solution="this.selectedPattern.solution"
-          :consequences="this.selectedPattern.consequences"
-          :examples="this.selectedPattern.examples"
-          :resources="this.selectedPattern.resources"
-          :categories="this.selectedPattern.categories"
-          :resourcePapers="this.resourcePapers"></PatternDetail>
+        :name="this.selectedPattern.name"
+        :aka="this.selectedPattern.aka"
+        :motivation="this.selectedPattern.motivation"
+        :solution="this.selectedPattern.solution"
+        :consequences="this.selectedPattern.consequences"
+        :examples="this.selectedPattern.examples"
+        :resources="this.selectedPattern.resources"
+        :categories="this.selectedPattern.categories"
+        :resourcePapers="this.resourcePapers"
+      ></PatternDetail>
     </v-card>
   </v-dialog>
 </template>
@@ -58,14 +59,13 @@
 import PatternDetail from "./PatternDetail.vue";
 
 export default {
-  
   name: "PatternGrid",
-  components: {PatternDetail},
+  components: { PatternDetail },
   data() {
     return {
       filterCriteria: {
-        categories: [''],
-        onlyGeneric: false,
+        categories: [""],
+        onlyGeneric: false
       },
       resourcePapers: [],
       patterns: [],
@@ -76,26 +76,26 @@ export default {
   },
   methods: {
     getResources() {
-      fetch('https://raw.githubusercontent.com/SWE4AI/ai-patterns/main/ai-patterns/resources/resources.json')
-        .then(res => res.json())
-        .then(json => {
-            this.resourcePapers = json;
+      fetch("https://raw.githubusercontent.com/SWE4AI/ai-patterns/main/ai-patterns/resources/resources.json")
+        .then((res) => res.json())
+        .then((json) => {
+          this.resourcePapers = json;
         });
     },
     getPatternData() {
-      fetch('https://api.github.com/repos/swe4ai/ai-patterns/contents/ai-patterns/patterns/')
-        .then(list => list.json())
-        .then(fileList =>{
-          fileList.forEach(file => {
-            fetch('https://raw.githubusercontent.com/SWE4AI/ai-patterns/main/ai-patterns/patterns/' + file.name)
-              .then(res => res.json())
-              .then(json => {
-                this.patterns.push(json)
-            })
+      fetch("https://api.github.com/repos/swe4ai/ai-patterns/contents/ai-patterns/patterns/")
+        .then((list) => list.json())
+        .then((fileList) => {
+          fileList.forEach((file) => {
+            fetch("https://raw.githubusercontent.com/SWE4AI/ai-patterns/main/ai-patterns/patterns/" + file.name)
+              .then((res) => res.json())
+              .then((json) => {
+                this.patterns.push(json);
+              });
           });
           this.filteredPatterns = Object.assign({}, this.patterns);
           this.resetFilters();
-      });
+        });
     },
     goToDetailView(id) {
       this.selectedPattern = this.filteredPatterns.filter((item) => {
@@ -119,7 +119,7 @@ export default {
               }
             }
             return false;
-          })
+          });
         }
       }
       if (shouldReset) {
@@ -132,9 +132,10 @@ export default {
       this.filteredPatterns = this.patterns;
     },
     sortPatterns(sortingCrit) {
-      if (sortingCrit === 'Alphabetical (A-Z)') {
+      if (sortingCrit === "Alphabetical (A-Z)") {
         this.filteredPatterns = this.filteredPatterns.sort((first, second) => {
-          let firstName = first.name.toLowerCase(), secondName = second.name.toLowerCase();
+          let firstName = first.name.toLowerCase(),
+            secondName = second.name.toLowerCase();
           if (firstName < secondName) {
             return -1;
           }
@@ -143,42 +144,53 @@ export default {
           }
           return 0;
         });
-      } else if (sortingCrit === 'Alphabetical (Z-A)') {
-        this.filteredPatterns.sort((first, second) => {
-          let firstName = first.name.toLowerCase(), secondName = second.name.toLowerCase();
-          if (firstName < secondName) {
-            return -1;
-          }
-          if (firstName > secondName) {
-            return 1;
-          }
-          return 0;
-        }).reverse();
-      } else if (sortingCrit === 'Number of References') {
-        this.filteredPatterns.sort((first, second) => {
-          if (first.resources.length < second.resources.length) return -1;
-          if (first.resources.length < second.resources.length) return 1;
-          return 0;
-        }).reverse();
+      } else if (sortingCrit === "Alphabetical (Z-A)") {
+        this.filteredPatterns
+          .sort((first, second) => {
+            let firstName = first.name.toLowerCase(),
+              secondName = second.name.toLowerCase();
+            if (firstName < secondName) {
+              return -1;
+            }
+            if (firstName > secondName) {
+              return 1;
+            }
+            return 0;
+          })
+          .reverse();
+      } else if (sortingCrit === "Number of References") {
+        this.filteredPatterns
+          .sort((first, second) => {
+            if (first.resources.length < second.resources.length) return -1;
+            if (first.resources.length < second.resources.length) return 1;
+            return 0;
+          })
+          .reverse();
       }
     },
     search(inputString) {
       this.filteredPatterns = this.patterns.filter((pattern) => {
-        return (pattern.name.toLowerCase().includes(inputString))
-            || (pattern.motivation.toLowerCase().includes(inputString))
-            || (pattern.solution.toLowerCase().includes(inputString))
-            || (pattern.consequences.toLowerCase().includes(inputString))
+        return (
+          pattern.name.toLowerCase().includes(inputString) ||
+          pattern.motivation.toLowerCase().includes(inputString) ||
+          pattern.solution.toLowerCase().includes(inputString) ||
+          pattern.consequences.toLowerCase().includes(inputString)
+        );
       });
     },
     copyToClipboard(id) {
-      let pattern = JSON.stringify(this.patterns.filter((item) => {return item.id === id;})[0].default);
+      let pattern = JSON.stringify(
+        this.patterns.filter((item) => {
+          return item.id === id;
+        })[0].default
+      );
       navigator.clipboard.writeText(pattern);
     }
   },
   mounted() {
     this.getResources();
     this.getPatternData();
-  },
+  }
 };
 </script>
 

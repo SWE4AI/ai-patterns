@@ -26,7 +26,7 @@
   <v-row class="pa-2">
     <v-col cols="2"><b>Resources:</b></v-col>
     <v-col>
-      <div v-for="resource of resources" class="mb-3">
+      <div v-for="resource of resources" v-bind:key="resource.ID" class="mb-3">
         <p>{{ getResource(resource, resourcePapers) }}</p>
         <p><v-btn color="green" @click="copyToClipboard(getResource(resource, resourcePapers))">Copy Citation</v-btn></p>
       </div>
@@ -35,7 +35,7 @@
   <v-row class="pa-2">
     <v-col cols="2"><b>Categories:</b></v-col>
     <v-col>
-      <p v-for="category of categories">{{ category }}</p>
+      <p v-for="category of categories" v-bind:key="category">{{ category }}</p>
     </v-col>
   </v-row>
 </template>

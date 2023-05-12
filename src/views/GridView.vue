@@ -7,7 +7,5 @@ import PatternGrid from "../components/PatternGrid.vue";
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>

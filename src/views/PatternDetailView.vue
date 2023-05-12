@@ -3,5 +3,5 @@ import PatternDetail from "../components/PatternDetail.vue";
 </script>
 
 <template>
-    <PatternDetail/>
+  <PatternDetail />
 </template>
